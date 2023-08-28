@@ -6,5 +6,10 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

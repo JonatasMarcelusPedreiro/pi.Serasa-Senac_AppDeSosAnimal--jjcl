@@ -27,5 +27,10 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             Form4 tela = new Form4();
             tela.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

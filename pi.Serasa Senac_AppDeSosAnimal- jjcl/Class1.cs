@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 {
-    internal class Class1
+
+
+    public class Class1
     {
+        
+        
+            
+            
+        
+
+       
+
     }
+
+
 }

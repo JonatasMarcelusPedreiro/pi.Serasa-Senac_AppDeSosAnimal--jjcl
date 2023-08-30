@@ -1,6 +1,6 @@
 ﻿namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 {
-    partial class Form2
+    partial class Form6
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             this.Painel = new WiLBiT.WiLBiTGradientPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -285,15 +285,15 @@
             this.btncdcompleto.Text = "CADASTRAR";
             this.btncdcompleto.UseVisualStyleBackColor = false;
             // 
-            // Form2
+            // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Painel);
-            this.Name = "Form2";
-            this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Name = "Form6";
+            this.Text = "Form6";
+            this.Load += new System.EventHandler(this.Form6_Load);
             this.Painel.ResumeLayout(false);
             this.Painel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

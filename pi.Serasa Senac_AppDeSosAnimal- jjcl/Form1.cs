@@ -61,7 +61,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void btncadastrocompleto_Click(object sender, EventArgs e)
         {
-            Form2 tela = new Form2 ();
+            Form6 tela = new Form6();
             tela.Show();
         }
 

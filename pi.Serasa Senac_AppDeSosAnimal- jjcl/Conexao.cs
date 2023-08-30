@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _08_conexaoBD
+namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 {
     internal class Conexao
     {

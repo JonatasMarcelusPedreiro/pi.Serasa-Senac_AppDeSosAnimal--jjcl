@@ -28,21 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             this.Painel = new WiLBiT.WiLBiTGradientPanel();
+            this.btncdcompleto = new WiLBiT.WiLBiTButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtcdcompletocpf = new WiLBiT.WiLBiTTextBox();
+            this.txtcdcompletotel = new WiLBiT.WiLBiTTextBox();
+            this.txtcdcompletoemail = new WiLBiT.WiLBiTTextBox();
+            this.txtcdcompletosenha = new WiLBiT.WiLBiTTextBox();
+            this.txtcdcompletonome = new WiLBiT.WiLBiTTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtdecompletonome = new WiLBiT.WiLBiTTextBox();
-            this.txtcdcompletosenha = new WiLBiT.WiLBiTTextBox();
-            this.txtcdcompletoemail = new WiLBiT.WiLBiTTextBox();
-            this.txtcdcompletotel = new WiLBiT.WiLBiTTextBox();
-            this.txtcdcompletocpf = new WiLBiT.WiLBiTTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btncdcompleto = new WiLBiT.WiLBiTButton();
             this.Painel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +60,7 @@
             this.Painel.Controls.Add(this.txtcdcompletotel);
             this.Painel.Controls.Add(this.txtcdcompletoemail);
             this.Painel.Controls.Add(this.txtcdcompletosenha);
-            this.Painel.Controls.Add(this.txtdecompletonome);
+            this.Painel.Controls.Add(this.txtcdcompletonome);
             this.Painel.Controls.Add(this.label6);
             this.Painel.Controls.Add(this.label5);
             this.Painel.Controls.Add(this.label4);
@@ -73,6 +72,158 @@
             this.Painel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Painel.Size = new System.Drawing.Size(839, 524);
             this.Painel.TabIndex = 5;
+            // 
+            // btncdcompleto
+            // 
+            this.btncdcompleto.BackColor = System.Drawing.Color.Black;
+            this.btncdcompleto.BorderColor = System.Drawing.Color.Black;
+            this.btncdcompleto.BorderRadius = 15;
+            this.btncdcompleto.BorderSize = 0;
+            this.btncdcompleto.FlatAppearance.BorderSize = 0;
+            this.btncdcompleto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncdcompleto.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btncdcompleto.ForeColor = System.Drawing.Color.White;
+            this.btncdcompleto.Location = new System.Drawing.Point(346, 366);
+            this.btncdcompleto.Name = "btncdcompleto";
+            this.btncdcompleto.Size = new System.Drawing.Size(134, 22);
+            this.btncdcompleto.TabIndex = 21;
+            this.btncdcompleto.Text = "CADASTRAR";
+            this.btncdcompleto.UseVisualStyleBackColor = false;
+            this.btncdcompleto.Click += new System.EventHandler(this.btncdcompleto_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label3.Location = new System.Drawing.Point(235, 225);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 15);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "EMAIL";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.Location = new System.Drawing.Point(235, 262);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 15);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "SENHA";
+            // 
+            // txtcdcompletocpf
+            // 
+            this.txtcdcompletocpf.BackColor = System.Drawing.SystemColors.InfoText;
+            this.txtcdcompletocpf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.txtcdcompletocpf.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtcdcompletocpf.BorderRadius = 20;
+            this.txtcdcompletocpf.BorderSize = 2;
+            this.txtcdcompletocpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtcdcompletocpf.ForeColor = System.Drawing.Color.White;
+            this.txtcdcompletocpf.Location = new System.Drawing.Point(284, 293);
+            this.txtcdcompletocpf.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcdcompletocpf.Multiline = false;
+            this.txtcdcompletocpf.Name = "txtcdcompletocpf";
+            this.txtcdcompletocpf.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtcdcompletocpf.PasswordChar = false;
+            this.txtcdcompletocpf.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtcdcompletocpf.PlaceholderText = "";
+            this.txtcdcompletocpf.Size = new System.Drawing.Size(250, 29);
+            this.txtcdcompletocpf.TabIndex = 17;
+            this.txtcdcompletocpf.Texts = "";
+            this.txtcdcompletocpf.UnderlinedStyle = false;
+            // 
+            // txtcdcompletotel
+            // 
+            this.txtcdcompletotel.BackColor = System.Drawing.SystemColors.InfoText;
+            this.txtcdcompletotel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.txtcdcompletotel.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtcdcompletotel.BorderRadius = 20;
+            this.txtcdcompletotel.BorderSize = 2;
+            this.txtcdcompletotel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtcdcompletotel.ForeColor = System.Drawing.Color.White;
+            this.txtcdcompletotel.Location = new System.Drawing.Point(284, 330);
+            this.txtcdcompletotel.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcdcompletotel.Multiline = false;
+            this.txtcdcompletotel.Name = "txtcdcompletotel";
+            this.txtcdcompletotel.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtcdcompletotel.PasswordChar = false;
+            this.txtcdcompletotel.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtcdcompletotel.PlaceholderText = "";
+            this.txtcdcompletotel.Size = new System.Drawing.Size(250, 29);
+            this.txtcdcompletotel.TabIndex = 16;
+            this.txtcdcompletotel.Texts = "";
+            this.txtcdcompletotel.UnderlinedStyle = false;
+            // 
+            // txtcdcompletoemail
+            // 
+            this.txtcdcompletoemail.BackColor = System.Drawing.SystemColors.InfoText;
+            this.txtcdcompletoemail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.txtcdcompletoemail.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtcdcompletoemail.BorderRadius = 20;
+            this.txtcdcompletoemail.BorderSize = 2;
+            this.txtcdcompletoemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtcdcompletoemail.ForeColor = System.Drawing.Color.White;
+            this.txtcdcompletoemail.Location = new System.Drawing.Point(284, 211);
+            this.txtcdcompletoemail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcdcompletoemail.Multiline = false;
+            this.txtcdcompletoemail.Name = "txtcdcompletoemail";
+            this.txtcdcompletoemail.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtcdcompletoemail.PasswordChar = false;
+            this.txtcdcompletoemail.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtcdcompletoemail.PlaceholderText = "";
+            this.txtcdcompletoemail.Size = new System.Drawing.Size(250, 29);
+            this.txtcdcompletoemail.TabIndex = 15;
+            this.txtcdcompletoemail.Texts = "";
+            this.txtcdcompletoemail.UnderlinedStyle = false;
+            // 
+            // txtcdcompletosenha
+            // 
+            this.txtcdcompletosenha.BackColor = System.Drawing.SystemColors.InfoText;
+            this.txtcdcompletosenha.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.txtcdcompletosenha.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtcdcompletosenha.BorderRadius = 20;
+            this.txtcdcompletosenha.BorderSize = 2;
+            this.txtcdcompletosenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtcdcompletosenha.ForeColor = System.Drawing.Color.White;
+            this.txtcdcompletosenha.Location = new System.Drawing.Point(284, 248);
+            this.txtcdcompletosenha.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcdcompletosenha.Multiline = false;
+            this.txtcdcompletosenha.Name = "txtcdcompletosenha";
+            this.txtcdcompletosenha.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtcdcompletosenha.PasswordChar = false;
+            this.txtcdcompletosenha.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtcdcompletosenha.PlaceholderText = "";
+            this.txtcdcompletosenha.Size = new System.Drawing.Size(250, 29);
+            this.txtcdcompletosenha.TabIndex = 14;
+            this.txtcdcompletosenha.Texts = "";
+            this.txtcdcompletosenha.UnderlinedStyle = false;
+            // 
+            // txtcdcompletonome
+            // 
+            this.txtcdcompletonome.BackColor = System.Drawing.SystemColors.InfoText;
+            this.txtcdcompletonome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.txtcdcompletonome.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtcdcompletonome.BorderRadius = 20;
+            this.txtcdcompletonome.BorderSize = 2;
+            this.txtcdcompletonome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtcdcompletonome.ForeColor = System.Drawing.Color.White;
+            this.txtcdcompletonome.Location = new System.Drawing.Point(284, 170);
+            this.txtcdcompletonome.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcdcompletonome.Multiline = false;
+            this.txtcdcompletonome.Name = "txtcdcompletonome";
+            this.txtcdcompletonome.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtcdcompletonome.PasswordChar = false;
+            this.txtcdcompletonome.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtcdcompletonome.PlaceholderText = "";
+            this.txtcdcompletonome.Size = new System.Drawing.Size(250, 29);
+            this.txtcdcompletonome.TabIndex = 13;
+            this.txtcdcompletonome.Texts = "";
+            this.txtcdcompletonome.UnderlinedStyle = false;
             // 
             // label6
             // 
@@ -125,7 +276,6 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Image = global::pi.Serasa_Senac_AppDeSosAnimal__jjcl.Properties.Resources.ATXC0623;
             this.pictureBox1.Location = new System.Drawing.Point(299, 25);
             this.pictureBox1.Name = "pictureBox1";
@@ -133,157 +283,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // txtdecompletonome
-            // 
-            this.txtdecompletonome.BackColor = System.Drawing.SystemColors.InfoText;
-            this.txtdecompletonome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.txtdecompletonome.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtdecompletonome.BorderRadius = 20;
-            this.txtdecompletonome.BorderSize = 2;
-            this.txtdecompletonome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtdecompletonome.ForeColor = System.Drawing.Color.White;
-            this.txtdecompletonome.Location = new System.Drawing.Point(284, 170);
-            this.txtdecompletonome.Margin = new System.Windows.Forms.Padding(4);
-            this.txtdecompletonome.Multiline = false;
-            this.txtdecompletonome.Name = "txtdecompletonome";
-            this.txtdecompletonome.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtdecompletonome.PasswordChar = false;
-            this.txtdecompletonome.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtdecompletonome.PlaceholderText = "";
-            this.txtdecompletonome.Size = new System.Drawing.Size(250, 29);
-            this.txtdecompletonome.TabIndex = 13;
-            this.txtdecompletonome.Texts = "";
-            this.txtdecompletonome.UnderlinedStyle = false;
-            // 
-            // txtcdcompletosenha
-            // 
-            this.txtcdcompletosenha.BackColor = System.Drawing.SystemColors.InfoText;
-            this.txtcdcompletosenha.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.txtcdcompletosenha.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtcdcompletosenha.BorderRadius = 20;
-            this.txtcdcompletosenha.BorderSize = 2;
-            this.txtcdcompletosenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtcdcompletosenha.ForeColor = System.Drawing.Color.White;
-            this.txtcdcompletosenha.Location = new System.Drawing.Point(284, 248);
-            this.txtcdcompletosenha.Margin = new System.Windows.Forms.Padding(4);
-            this.txtcdcompletosenha.Multiline = false;
-            this.txtcdcompletosenha.Name = "txtcdcompletosenha";
-            this.txtcdcompletosenha.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtcdcompletosenha.PasswordChar = false;
-            this.txtcdcompletosenha.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtcdcompletosenha.PlaceholderText = "";
-            this.txtcdcompletosenha.Size = new System.Drawing.Size(250, 29);
-            this.txtcdcompletosenha.TabIndex = 14;
-            this.txtcdcompletosenha.Texts = "";
-            this.txtcdcompletosenha.UnderlinedStyle = false;
-            // 
-            // txtcdcompletoemail
-            // 
-            this.txtcdcompletoemail.BackColor = System.Drawing.SystemColors.InfoText;
-            this.txtcdcompletoemail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.txtcdcompletoemail.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtcdcompletoemail.BorderRadius = 20;
-            this.txtcdcompletoemail.BorderSize = 2;
-            this.txtcdcompletoemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtcdcompletoemail.ForeColor = System.Drawing.Color.White;
-            this.txtcdcompletoemail.Location = new System.Drawing.Point(284, 211);
-            this.txtcdcompletoemail.Margin = new System.Windows.Forms.Padding(4);
-            this.txtcdcompletoemail.Multiline = false;
-            this.txtcdcompletoemail.Name = "txtcdcompletoemail";
-            this.txtcdcompletoemail.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtcdcompletoemail.PasswordChar = false;
-            this.txtcdcompletoemail.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtcdcompletoemail.PlaceholderText = "";
-            this.txtcdcompletoemail.Size = new System.Drawing.Size(250, 29);
-            this.txtcdcompletoemail.TabIndex = 15;
-            this.txtcdcompletoemail.Texts = "";
-            this.txtcdcompletoemail.UnderlinedStyle = false;
-            // 
-            // txtcdcompletotel
-            // 
-            this.txtcdcompletotel.BackColor = System.Drawing.SystemColors.InfoText;
-            this.txtcdcompletotel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.txtcdcompletotel.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtcdcompletotel.BorderRadius = 20;
-            this.txtcdcompletotel.BorderSize = 2;
-            this.txtcdcompletotel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtcdcompletotel.ForeColor = System.Drawing.Color.White;
-            this.txtcdcompletotel.Location = new System.Drawing.Point(284, 330);
-            this.txtcdcompletotel.Margin = new System.Windows.Forms.Padding(4);
-            this.txtcdcompletotel.Multiline = false;
-            this.txtcdcompletotel.Name = "txtcdcompletotel";
-            this.txtcdcompletotel.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtcdcompletotel.PasswordChar = false;
-            this.txtcdcompletotel.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtcdcompletotel.PlaceholderText = "";
-            this.txtcdcompletotel.Size = new System.Drawing.Size(250, 29);
-            this.txtcdcompletotel.TabIndex = 16;
-            this.txtcdcompletotel.Texts = "";
-            this.txtcdcompletotel.UnderlinedStyle = false;
-            // 
-            // txtcdcompletocpf
-            // 
-            this.txtcdcompletocpf.BackColor = System.Drawing.SystemColors.InfoText;
-            this.txtcdcompletocpf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.txtcdcompletocpf.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtcdcompletocpf.BorderRadius = 20;
-            this.txtcdcompletocpf.BorderSize = 2;
-            this.txtcdcompletocpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtcdcompletocpf.ForeColor = System.Drawing.Color.White;
-            this.txtcdcompletocpf.Location = new System.Drawing.Point(284, 293);
-            this.txtcdcompletocpf.Margin = new System.Windows.Forms.Padding(4);
-            this.txtcdcompletocpf.Multiline = false;
-            this.txtcdcompletocpf.Name = "txtcdcompletocpf";
-            this.txtcdcompletocpf.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtcdcompletocpf.PasswordChar = false;
-            this.txtcdcompletocpf.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtcdcompletocpf.PlaceholderText = "";
-            this.txtcdcompletocpf.Size = new System.Drawing.Size(250, 29);
-            this.txtcdcompletocpf.TabIndex = 17;
-            this.txtcdcompletocpf.Texts = "";
-            this.txtcdcompletocpf.UnderlinedStyle = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(235, 262);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 15);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "SENHA";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(235, 225);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 15);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "EMAIL";
-            // 
-            // btncdcompleto
-            // 
-            this.btncdcompleto.BackColor = System.Drawing.Color.Black;
-            this.btncdcompleto.BorderColor = System.Drawing.Color.Black;
-            this.btncdcompleto.BorderRadius = 15;
-            this.btncdcompleto.BorderSize = 0;
-            this.btncdcompleto.FlatAppearance.BorderSize = 0;
-            this.btncdcompleto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncdcompleto.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btncdcompleto.ForeColor = System.Drawing.Color.White;
-            this.btncdcompleto.Location = new System.Drawing.Point(346, 366);
-            this.btncdcompleto.Name = "btncdcompleto";
-            this.btncdcompleto.Size = new System.Drawing.Size(134, 22);
-            this.btncdcompleto.TabIndex = 21;
-            this.btncdcompleto.Text = "CADASTRAR";
-            this.btncdcompleto.UseVisualStyleBackColor = false;
             // 
             // Form6
             // 
@@ -310,7 +309,7 @@
         private WiLBiT.WiLBiTTextBox txtcdcompletotel;
         private WiLBiT.WiLBiTTextBox txtcdcompletoemail;
         private WiLBiT.WiLBiTTextBox txtcdcompletosenha;
-        private WiLBiT.WiLBiTTextBox txtdecompletonome;
+        private WiLBiT.WiLBiTTextBox txtcdcompletonome;
         private Label label6;
         private Label label5;
         private Label label4;

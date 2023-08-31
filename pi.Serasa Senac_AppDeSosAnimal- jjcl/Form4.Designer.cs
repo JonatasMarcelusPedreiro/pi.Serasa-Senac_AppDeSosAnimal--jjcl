@@ -36,7 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.wilBitButton1 = new WiLBiT.WiLBiTButton();
-            this.btnlogin = new WiLBiT.WiLBiTButton();
+            this.btnsos = new WiLBiT.WiLBiTButton();
             this.Painel.SuspendLayout();
             this.wilBitGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,7 +54,7 @@
             this.Painel.Controls.Add(this.label2);
             this.Painel.Controls.Add(this.label1);
             this.Painel.Controls.Add(this.wilBitButton1);
-            this.Painel.Controls.Add(this.btnlogin);
+            this.Painel.Controls.Add(this.btnsos);
             this.Painel.ForeColor = System.Drawing.Color.DarkOrchid;
             this.Painel.Location = new System.Drawing.Point(-11, -41);
             this.Painel.Name = "Painel";
@@ -140,23 +140,25 @@
             this.wilBitButton1.TabIndex = 13;
             this.wilBitButton1.Text = "DOAÇÃO";
             this.wilBitButton1.UseVisualStyleBackColor = false;
+            this.wilBitButton1.Click += new System.EventHandler(this.wilBitButton1_Click);
             // 
-            // btnlogin
+            // btnsos
             // 
-            this.btnlogin.BackColor = System.Drawing.Color.Indigo;
-            this.btnlogin.BorderColor = System.Drawing.Color.Black;
-            this.btnlogin.BorderRadius = 55;
-            this.btnlogin.BorderSize = 0;
-            this.btnlogin.FlatAppearance.BorderSize = 0;
-            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnlogin.ForeColor = System.Drawing.Color.White;
-            this.btnlogin.Location = new System.Drawing.Point(223, 224);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(158, 118);
-            this.btnlogin.TabIndex = 12;
-            this.btnlogin.Text = "SOS";
-            this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnsos.BackColor = System.Drawing.Color.Indigo;
+            this.btnsos.BorderColor = System.Drawing.Color.Black;
+            this.btnsos.BorderRadius = 55;
+            this.btnsos.BorderSize = 0;
+            this.btnsos.FlatAppearance.BorderSize = 0;
+            this.btnsos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsos.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnsos.ForeColor = System.Drawing.Color.White;
+            this.btnsos.Location = new System.Drawing.Point(223, 224);
+            this.btnsos.Name = "btnsos";
+            this.btnsos.Size = new System.Drawing.Size(158, 118);
+            this.btnsos.TabIndex = 12;
+            this.btnsos.Text = "SOS";
+            this.btnsos.UseVisualStyleBackColor = false;
+            this.btnsos.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // Form4
             // 
@@ -185,6 +187,6 @@
         private Label label2;
         private Label label1;
         private WiLBiT.WiLBiTButton wilBitButton1;
-        private WiLBiT.WiLBiTButton btnlogin;
+        private WiLBiT.WiLBiTButton btnsos;
     }
 }

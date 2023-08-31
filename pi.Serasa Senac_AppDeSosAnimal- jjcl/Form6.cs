@@ -26,5 +26,33 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
 
         }
+
+        private void btncdcompleto_Click(object sender, EventArgs e)
+        {
+
+            string nome2 = txtcdcompletonome.Texts;
+            string cpf2 = txtcdcompletocpf.Texts;
+            string tel2 = txtcdcompletotel.Texts;
+            string senha = txtcdcompletosenha.Texts;
+            string email = txtcdcompletoemail.Texts;
+
+
+
+
+            if (nome2 == "" || cpf2 == "" || tel2 == "" || email == "" || senha == "")
+            {
+
+                MessageBox.Show("Preencha todos os campos acima.");
+
+
+            }
+            else
+            {
+                // Todos os campos estão preenchidos, então abra a Form4
+                Form2 tela = new Form2();
+                tela.Show();
+
+            }
+        }
     }
 }

@@ -33,7 +33,7 @@
             this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbldoacao = new System.Windows.Forms.Label();
             this.cadastrorapido = new WiLBiT.WiLBiTButton();
             this.txtnome = new WiLBiT.WiLBiTTextBox();
             this.panel1.SuspendLayout();
@@ -45,7 +45,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Controls.Add(this.wilBitGradientPanel1);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lbldoacao);
             this.panel1.Controls.Add(this.cadastrorapido);
             this.panel1.Controls.Add(this.txtnome);
             this.panel1.Location = new System.Drawing.Point(-51, -1);
@@ -94,18 +94,18 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label2
+            // lbldoacao
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label2.Location = new System.Drawing.Point(359, 185);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 23);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "DOAÇÃO VIA PIX";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lbldoacao.AutoSize = true;
+            this.lbldoacao.BackColor = System.Drawing.Color.Transparent;
+            this.lbldoacao.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbldoacao.ForeColor = System.Drawing.Color.GhostWhite;
+            this.lbldoacao.Location = new System.Drawing.Point(359, 185);
+            this.lbldoacao.Name = "lbldoacao";
+            this.lbldoacao.Size = new System.Drawing.Size(162, 23);
+            this.lbldoacao.TabIndex = 7;
+            this.lbldoacao.Text = "TRANSFERENCIA";
+            this.lbldoacao.Click += new System.EventHandler(this.label2_Click);
             // 
             // cadastrorapido
             // 
@@ -168,7 +168,7 @@
         private Panel panel1;
         private WiLBiT.WiLBiTTextBox txtnome;
         private WiLBiT.WiLBiTButton cadastrorapido;
-        private Label label2;
+        private Label lbldoacao;
         private WiLBiT.WiLBiTGradientPanel wilBitGradientPanel1;
         private Label label3;
         private PictureBox pictureBox1;

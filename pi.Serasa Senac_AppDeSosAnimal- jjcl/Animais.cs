@@ -58,7 +58,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         public void Insere(Animais animais)
         {
-            string query = $"insert into animais (animal, situacao, sexo, domestico) values ('{animais.animal}', {animais.situacao}', {animais.sexo}', {animais.domestico} );";
+            string query = $"insert into animais (animal, situacao, sexo, domestico) values ('{animais.animal}', '{animais.situacao}', '{animais.sexo}', {animais.domestico} );";
             Conexao.executaquery(query);
         }
 

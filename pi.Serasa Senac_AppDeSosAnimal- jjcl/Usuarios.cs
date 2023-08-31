@@ -17,7 +17,8 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         public string senha;
         public string telefone;
 
-        public Usuarios(int id, string nome, int cpf, string email, string senha, string telefone)
+        //cadastro completo
+        public Usuarios(string nome, int cpf, string email, string senha, string telefone)
         {
             this.id = id;
             this.nome = nome;
@@ -29,6 +30,13 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         public Usuarios()
         {
 
+        }
+        //cadastro rapido
+        public Usuarios (string nome, int cpf, string telefone)
+        {
+            this.nome = nome;
+            this.cpf = cpf;
+            this.telefone = telefone;
         }
 
         public List<Usuarios> busca_todos()
@@ -55,13 +63,18 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             string senha = linha["senha"].ToString();
             string telefone = linha["telefone"].ToString();
 
-            Usuarios usuarios = new Usuarios(id, nome, cpf, email, senha, telefone);
+            Usuarios usuarios = new Usuarios( nome, cpf, email, senha, telefone);
             return usuarios;
         }
 
-        public void Insere(Usuarios usuarios)
+        public void Insere_completo(Usuarios usuarios)
         {
-            string query = $"insert into usuarios (nome, cpf, email, senha, telefone) values ('{usuarios.nome}', {usuarios.cpf}', {usuarios.email}', {usuarios.senha}', {usuarios.telefone} );";
+            string query = $"insert into usuarios (nome, cpf, email, senha, telefone) values ('{usuarios.nome}', {usuarios.cpf}, '{usuarios.email}', '{usuarios.senha}', '{usuarios.telefone}' );";
+            Conexao.executaquery(query);
+        }
+        public void Insere_rapido(Usuarios usuarios)
+        {
+            string query = $"insert into usuarios (nome, cpf, telefone) values ('{usuarios.nome}', {usuarios.cpf}, '{usuarios.telefone}' );";
             Conexao.executaquery(query);
         }
 

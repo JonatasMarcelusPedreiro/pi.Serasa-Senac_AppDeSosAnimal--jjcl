@@ -60,7 +60,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         public void Insere(Funcionarios funcionarios)
         {
-            string query = $"insert into funcionarios (nome, cpf, email, senha, telefone) values ('{funcionarios.nome}', {funcionarios.cpf}', {funcionarios.email}', {funcionarios.senha}', {funcionarios.telefone} );";
+            string query = $"insert into funcionarios (nome, cpf, email, senha, telefone) values ('{funcionarios.nome}', {funcionarios.cpf}, '{funcionarios.email}', '{funcionarios.senha}', '{funcionarios.telefone}' );";
             Conexao.executaquery(query);
         }
 

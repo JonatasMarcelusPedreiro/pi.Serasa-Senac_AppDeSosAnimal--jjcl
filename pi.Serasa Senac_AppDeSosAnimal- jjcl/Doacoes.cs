@@ -50,7 +50,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         }
         public void Insere(Doacoes doacoes)
         {
-            string query = $"insert into doacoes (id_doacao, valor, nome, ) values ('{doacoes.id}', '{doacoes.valor}', {doacoes.nome});";
+            string query = $"insert into doacoes (id_doacao, valor, nome, ) values ('{doacoes.id}', {doacoes.valor}, {doacoes.nome});";
             Conexao.executaquery(query);
         }
         public Doacoes Busca_ID(int id)

@@ -30,7 +30,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void btncdcompleto_Click(object sender, EventArgs e)
         {
 
-            string nome = txtdecompletonome.Texts;
+            string nome = txtcdcompletonome.Texts;
             string cpf = txtcdcompletocpf.Texts;
             string telefone = txtcdcompletotel.Texts;
             string email = txtcdcompletoemail.Texts;
@@ -48,9 +48,9 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             }
             else
             {
-                int cpf = int.Parse(txtcdcompletocpf.Texts);
+                int cpf2 = int.Parse(cpf);
                 
-                Usuarios usuarios = new Usuarios(nome, cpf, email, senha, telefone);
+                Usuarios usuarios = new Usuarios(nome, cpf2, email, senha, telefone);
 
 
                 usuarios.Insere_completo(usuarios);

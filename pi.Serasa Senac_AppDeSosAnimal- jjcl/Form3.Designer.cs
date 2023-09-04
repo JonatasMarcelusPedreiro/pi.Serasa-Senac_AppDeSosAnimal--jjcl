@@ -32,12 +32,10 @@
             this.Painel3 = new WiLBiT.WiLBiTGradientPanel();
             this.btnlogin = new WiLBiT.WiLBiTButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.wilBitTextBox2 = new WiLBiT.WiLBiTTextBox();
             this.wilBitTextBox4 = new WiLBiT.WiLBiTTextBox();
             this.Painel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,12 +51,10 @@
             this.Painel3.BorderSize = 0;
             this.Painel3.Controls.Add(this.btnlogin);
             this.Painel3.Controls.Add(this.label6);
-            this.Painel3.Controls.Add(this.label5);
             this.Painel3.Controls.Add(this.label4);
             this.Painel3.Controls.Add(this.label1);
             this.Painel3.Controls.Add(this.wilBitTextBox1);
             this.Painel3.Controls.Add(this.pictureBox1);
-            this.Painel3.Controls.Add(this.wilBitTextBox2);
             this.Painel3.Controls.Add(this.wilBitTextBox4);
             this.Painel3.ForeColor = System.Drawing.Color.DarkOrchid;
             this.Painel3.Location = new System.Drawing.Point(-11, -41);
@@ -77,7 +73,7 @@
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogin.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnlogin.ForeColor = System.Drawing.Color.White;
-            this.btnlogin.Location = new System.Drawing.Point(335, 403);
+            this.btnlogin.Location = new System.Drawing.Point(335, 343);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(134, 22);
             this.btnlogin.TabIndex = 12;
@@ -91,23 +87,11 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(221, 357);
+            this.label6.Location = new System.Drawing.Point(221, 308);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 15);
             this.label6.TabIndex = 10;
             this.label6.Text = "SENHA";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(227, 303);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 15);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "CPF";
             // 
             // label4
             // 
@@ -167,28 +151,6 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // wilBitTextBox2
-            // 
-            this.wilBitTextBox2.BackColor = System.Drawing.SystemColors.InfoText;
-            this.wilBitTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitTextBox2.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.wilBitTextBox2.BorderRadius = 20;
-            this.wilBitTextBox2.BorderSize = 2;
-            this.wilBitTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wilBitTextBox2.Location = new System.Drawing.Point(270, 289);
-            this.wilBitTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.wilBitTextBox2.Multiline = false;
-            this.wilBitTextBox2.Name = "wilBitTextBox2";
-            this.wilBitTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.wilBitTextBox2.PasswordChar = false;
-            this.wilBitTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.wilBitTextBox2.PlaceholderText = "";
-            this.wilBitTextBox2.Size = new System.Drawing.Size(250, 29);
-            this.wilBitTextBox2.TabIndex = 1;
-            this.wilBitTextBox2.Texts = "";
-            this.wilBitTextBox2.UnderlinedStyle = false;
-            // 
             // wilBitTextBox4
             // 
             this.wilBitTextBox4.BackColor = System.Drawing.SystemColors.InfoText;
@@ -198,7 +160,7 @@
             this.wilBitTextBox4.BorderSize = 2;
             this.wilBitTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wilBitTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wilBitTextBox4.Location = new System.Drawing.Point(270, 343);
+            this.wilBitTextBox4.Location = new System.Drawing.Point(270, 294);
             this.wilBitTextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.wilBitTextBox4.Multiline = false;
             this.wilBitTextBox4.Name = "wilBitTextBox4";
@@ -233,12 +195,10 @@
         private WiLBiT.WiLBiTGradientPanel Painel3;
         private WiLBiT.WiLBiTButton btnlogin;
         private Label label6;
-        private Label label5;
         private Label label4;
         private Label label1;
         private WiLBiT.WiLBiTTextBox wilBitTextBox1;
         private PictureBox pictureBox1;
-        private WiLBiT.WiLBiTTextBox wilBitTextBox2;
         private WiLBiT.WiLBiTTextBox wilBitTextBox4;
     }
 }

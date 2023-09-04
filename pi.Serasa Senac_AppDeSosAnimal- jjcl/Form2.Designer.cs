@@ -39,7 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            
             // 
             // lblcadastradosadm
             // 

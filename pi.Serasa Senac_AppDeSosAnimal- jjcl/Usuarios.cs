@@ -86,6 +86,17 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             Usuarios usuarios = carrega_dados(tabela.Rows[0]);
 
             return usuarios;
+
         }
+        public Usuarios Login(string nome, string senha)
+        {
+            string query = $"select * from usuarios where nome = '{nome}' and senha = '{senha}';";
+
+            DataTable tabela = Conexao.executaquery(query);
+            Usuarios usuarios = carrega_dados(tabela.Rows[0]);
+
+            return usuarios;
+        }
+
     }
 }

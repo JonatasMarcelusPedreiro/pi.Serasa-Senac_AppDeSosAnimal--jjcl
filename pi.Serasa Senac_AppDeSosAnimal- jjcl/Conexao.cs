@@ -11,10 +11,10 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
     internal class Conexao
     {
         string teste;
-        const string host = "localhost";
+        const string host = "10.60.45.22";
         const string banco = "trabalho_final";
-        const string usuario = "root";
-        const string senha = "";
+        const string usuario = "senac";
+        const string senha = "senac";
         const string dados_conexao = $"Server={host};Database={banco};Uid={usuario};Pwd={senha};";
         static MySqlConnection conexao = new MySqlConnection(dados_conexao);
 

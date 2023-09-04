@@ -16,21 +16,5 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
             InitializeComponent();
         }
-
-        private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Form4 tela = new Form4();
-            tela.Show();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

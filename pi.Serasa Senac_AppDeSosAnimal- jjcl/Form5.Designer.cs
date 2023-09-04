@@ -28,149 +28,131 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbldoacao = new System.Windows.Forms.Label();
-            this.cadastrorapido = new WiLBiT.WiLBiTButton();
-            this.txtnome = new WiLBiT.WiLBiTTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblnome = new System.Windows.Forms.Label();
+            this.txtsexoanimal = new System.Windows.Forms.TextBox();
+            this.txtsenhaanimaissituacao = new System.Windows.Forms.TextBox();
+            this.btncadastrarfuncionarios = new System.Windows.Forms.Button();
+            this.txtcdanimalcd = new System.Windows.Forms.TextBox();
+            this.lblcadastroanimais = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.wilBitGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Controls.Add(this.wilBitGradientPanel1);
-            this.panel1.Controls.Add(this.lbldoacao);
-            this.panel1.Controls.Add(this.cadastrorapido);
-            this.panel1.Controls.Add(this.txtnome);
-            this.panel1.Location = new System.Drawing.Point(-51, -1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblnome);
+            this.panel1.Controls.Add(this.txtsexoanimal);
+            this.panel1.Controls.Add(this.txtsenhaanimaissituacao);
+            this.panel1.Controls.Add(this.btncadastrarfuncionarios);
+            this.panel1.Controls.Add(this.txtcdanimalcd);
+            this.panel1.Location = new System.Drawing.Point(240, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(850, 450);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(322, 331);
+            this.panel1.TabIndex = 4;
             // 
-            // wilBitGradientPanel1
+            // label2
             // 
-            this.wilBitGradientPanel1.BackColor = System.Drawing.Color.Indigo;
-            this.wilBitGradientPanel1.BackColor2 = System.Drawing.Color.DarkViolet;
-            this.wilBitGradientPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitGradientPanel1.BorderRadius = 6;
-            this.wilBitGradientPanel1.BorderSize = 0;
-            this.wilBitGradientPanel1.Controls.Add(this.label3);
-            this.wilBitGradientPanel1.Controls.Add(this.pictureBox1);
-            this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitGradientPanel1.Location = new System.Drawing.Point(-22, 0);
-            this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(890, 136);
-            this.wilBitGradientPanel1.TabIndex = 17;
-            this.wilBitGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitGradientPanel1_Paint);
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(31, 153);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Sexo";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label3.Location = new System.Drawing.Point(345, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(210, 30);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "ANIMAL RESCUE";
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(16, 105);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 15);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Situação";
             // 
-            // pictureBox1
+            // lblnome
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Image = global::pi.Serasa_Senac_AppDeSosAnimal__jjcl.Properties.Resources.ATXC0623;
-            this.pictureBox1.Location = new System.Drawing.Point(484, -23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 205);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.lblnome.AutoSize = true;
+            this.lblnome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblnome.Location = new System.Drawing.Point(23, 49);
+            this.lblnome.Name = "lblnome";
+            this.lblnome.Size = new System.Drawing.Size(45, 15);
+            this.lblnome.TabIndex = 4;
+            this.lblnome.Text = "Animal";
             // 
-            // lbldoacao
+            // txtsexoanimal
             // 
-            this.lbldoacao.AutoSize = true;
-            this.lbldoacao.BackColor = System.Drawing.Color.Transparent;
-            this.lbldoacao.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbldoacao.ForeColor = System.Drawing.Color.GhostWhite;
-            this.lbldoacao.Location = new System.Drawing.Point(359, 185);
-            this.lbldoacao.Name = "lbldoacao";
-            this.lbldoacao.Size = new System.Drawing.Size(162, 23);
-            this.lbldoacao.TabIndex = 7;
-            this.lbldoacao.Text = "TRANSFERENCIA";
-            this.lbldoacao.Click += new System.EventHandler(this.label2_Click);
+            this.txtsexoanimal.Location = new System.Drawing.Point(69, 150);
+            this.txtsexoanimal.Name = "txtsexoanimal";
+            this.txtsexoanimal.Size = new System.Drawing.Size(201, 23);
+            this.txtsexoanimal.TabIndex = 3;
             // 
-            // cadastrorapido
+            // txtsenhaanimaissituacao
             // 
-            this.cadastrorapido.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.cadastrorapido.BorderColor = System.Drawing.Color.Black;
-            this.cadastrorapido.BorderRadius = 15;
-            this.cadastrorapido.BorderSize = 0;
-            this.cadastrorapido.FlatAppearance.BorderSize = 0;
-            this.cadastrorapido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cadastrorapido.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cadastrorapido.ForeColor = System.Drawing.Color.White;
-            this.cadastrorapido.Location = new System.Drawing.Point(320, 262);
-            this.cadastrorapido.Name = "cadastrorapido";
-            this.cadastrorapido.Size = new System.Drawing.Size(251, 27);
-            this.cadastrorapido.TabIndex = 4;
-            this.cadastrorapido.Text = "ENVIAR";
-            this.cadastrorapido.UseVisualStyleBackColor = false;
+            this.txtsenhaanimaissituacao.Location = new System.Drawing.Point(69, 97);
+            this.txtsenhaanimaissituacao.Name = "txtsenhaanimaissituacao";
+            this.txtsenhaanimaissituacao.Size = new System.Drawing.Size(201, 23);
+            this.txtsenhaanimaissituacao.TabIndex = 2;
             // 
-            // txtnome
+            // btncadastrarfuncionarios
             // 
-            this.txtnome.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtnome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.txtnome.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtnome.BorderRadius = 20;
-            this.txtnome.BorderSize = 2;
-            this.txtnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtnome.ForeColor = System.Drawing.Color.White;
-            this.txtnome.Location = new System.Drawing.Point(320, 212);
-            this.txtnome.Margin = new System.Windows.Forms.Padding(4);
-            this.txtnome.Multiline = false;
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtnome.PasswordChar = false;
-            this.txtnome.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtnome.PlaceholderText = "";
-            this.txtnome.Size = new System.Drawing.Size(250, 29);
-            this.txtnome.TabIndex = 3;
-            this.txtnome.Texts = "";
-            this.txtnome.UnderlinedStyle = false;
+            this.btncadastrarfuncionarios.Location = new System.Drawing.Point(131, 193);
+            this.btncadastrarfuncionarios.Name = "btncadastrarfuncionarios";
+            this.btncadastrarfuncionarios.Size = new System.Drawing.Size(75, 23);
+            this.btncadastrarfuncionarios.TabIndex = 1;
+            this.btncadastrarfuncionarios.Text = "Cadastrar";
+            this.btncadastrarfuncionarios.UseVisualStyleBackColor = true;
+            // 
+            // txtcdanimalcd
+            // 
+            this.txtcdanimalcd.Location = new System.Drawing.Point(69, 46);
+            this.txtcdanimalcd.Name = "txtcdanimalcd";
+            this.txtcdanimalcd.Size = new System.Drawing.Size(201, 23);
+            this.txtcdanimalcd.TabIndex = 0;
+            // 
+            // lblcadastroanimais
+            // 
+            this.lblcadastroanimais.AutoSize = true;
+            this.lblcadastroanimais.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblcadastroanimais.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblcadastroanimais.Location = new System.Drawing.Point(243, 9);
+            this.lblcadastroanimais.Name = "lblcadastroanimais";
+            this.lblcadastroanimais.Size = new System.Drawing.Size(319, 50);
+            this.lblcadastroanimais.TabIndex = 7;
+            this.lblcadastroanimais.Text = "Cadastrar Animais";
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblcadastroanimais);
             this.Controls.Add(this.panel1);
             this.Name = "Form5";
             this.Text = "Form5";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.wilBitGradientPanel1.ResumeLayout(false);
-            this.wilBitGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private Panel panel1;
-        private WiLBiT.WiLBiTTextBox txtnome;
-        private WiLBiT.WiLBiTButton cadastrorapido;
-        private Label lbldoacao;
-        private WiLBiT.WiLBiTGradientPanel wilBitGradientPanel1;
-        private Label label3;
-        private PictureBox pictureBox1;
+        private Label label2;
+        private Label label1;
+        private Label lblnome;
+        private TextBox txtsexoanimal;
+        private TextBox txtsenhaanimaissituacao;
+        private Button btncadastrarfuncionarios;
+        private TextBox txtcdanimalcd;
+        private Label lblcadastroanimais;
     }
 }

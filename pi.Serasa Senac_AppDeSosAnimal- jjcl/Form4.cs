@@ -60,6 +60,23 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
             Process.Start(psi);
         }
+
+        private void btnanimais_Click(object sender, EventArgs e)
+        {
+            string link2 = "https://64f21ed21653d.site123.me/";
+            ProcessStartInfo psi = new ProcessStartInfo
+            {
+                FileName = link2,
+                UseShellExecute = true
+            };
+
+            Process.Start(psi);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

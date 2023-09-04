@@ -28,85 +28,141 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.PainelAnimais = new System.Windows.Forms.Panel();
-            this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.PainelAnimais.SuspendLayout();
-            this.wilBitGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lblcadastradosadm = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btncadastrarfuncionarios = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.listfuncionarioscadastrados = new System.Windows.Forms.ListView();
+            this.txtsenhacdfuncionario = new System.Windows.Forms.TextBox();
+            this.txttelcdfuncionario = new System.Windows.Forms.TextBox();
+            this.lblnome = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // PainelAnimais
+            // lblcadastradosadm
             // 
-            this.PainelAnimais.AutoScroll = true;
-            this.PainelAnimais.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PainelAnimais.Controls.Add(this.wilBitGradientPanel1);
-            this.PainelAnimais.Location = new System.Drawing.Point(-20, -1);
-            this.PainelAnimais.Name = "PainelAnimais";
-            this.PainelAnimais.Size = new System.Drawing.Size(823, 474);
-            this.PainelAnimais.TabIndex = 1;
+            this.lblcadastradosadm.AutoSize = true;
+            this.lblcadastradosadm.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblcadastradosadm.Location = new System.Drawing.Point(193, 9);
+            this.lblcadastradosadm.Name = "lblcadastradosadm";
+            this.lblcadastradosadm.Size = new System.Drawing.Size(397, 50);
+            this.lblcadastradosadm.TabIndex = 2;
+            this.lblcadastradosadm.Text = "Cadastrar Funcionários";
             // 
-            // wilBitGradientPanel1
+            // textBox1
             // 
-            this.wilBitGradientPanel1.BackColor = System.Drawing.Color.Indigo;
-            this.wilBitGradientPanel1.BackColor2 = System.Drawing.Color.DarkViolet;
-            this.wilBitGradientPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.wilBitGradientPanel1.BorderRadius = 6;
-            this.wilBitGradientPanel1.BorderSize = 0;
-            this.wilBitGradientPanel1.Controls.Add(this.pictureBox1);
-            this.wilBitGradientPanel1.Controls.Add(this.label3);
-            this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitGradientPanel1.Location = new System.Drawing.Point(-36, 0);
-            this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(894, 119);
-            this.wilBitGradientPanel1.TabIndex = 17;
+            this.textBox1.Location = new System.Drawing.Point(69, 46);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(201, 23);
+            this.textBox1.TabIndex = 0;
             // 
-            // pictureBox1
+            // btncadastrarfuncionarios
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Image = global::pi.Serasa_Senac_AppDeSosAnimal__jjcl.Properties.Resources.ATXC0623;
-            this.pictureBox1.Location = new System.Drawing.Point(766, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(103, 149);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.btncadastrarfuncionarios.Location = new System.Drawing.Point(136, 198);
+            this.btncadastrarfuncionarios.Name = "btncadastrarfuncionarios";
+            this.btncadastrarfuncionarios.Size = new System.Drawing.Size(75, 23);
+            this.btncadastrarfuncionarios.TabIndex = 1;
+            this.btncadastrarfuncionarios.Text = "Cadastrar";
+            this.btncadastrarfuncionarios.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // panel1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label3.Location = new System.Drawing.Point(329, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(286, 30);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "ANIMAIS RESGATADOS";
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblnome);
+            this.panel1.Controls.Add(this.txttelcdfuncionario);
+            this.panel1.Controls.Add(this.txtsenhacdfuncionario);
+            this.panel1.Controls.Add(this.btncadastrarfuncionarios);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Location = new System.Drawing.Point(25, 71);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(322, 331);
+            this.panel1.TabIndex = 3;
+            // 
+            // listfuncionarioscadastrados
+            // 
+            this.listfuncionarioscadastrados.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.listfuncionarioscadastrados.ForeColor = System.Drawing.SystemColors.Window;
+            this.listfuncionarioscadastrados.Location = new System.Drawing.Point(420, 71);
+            this.listfuncionarioscadastrados.Name = "listfuncionarioscadastrados";
+            this.listfuncionarioscadastrados.Size = new System.Drawing.Size(317, 325);
+            this.listfuncionarioscadastrados.TabIndex = 1;
+            this.listfuncionarioscadastrados.UseCompatibleStateImageBehavior = false;
+            // 
+            // txtsenhacdfuncionario
+            // 
+            this.txtsenhacdfuncionario.Location = new System.Drawing.Point(69, 97);
+            this.txtsenhacdfuncionario.Name = "txtsenhacdfuncionario";
+            this.txtsenhacdfuncionario.Size = new System.Drawing.Size(201, 23);
+            this.txtsenhacdfuncionario.TabIndex = 2;
+            // 
+            // txttelcdfuncionario
+            // 
+            this.txttelcdfuncionario.Location = new System.Drawing.Point(69, 158);
+            this.txttelcdfuncionario.Name = "txttelcdfuncionario";
+            this.txttelcdfuncionario.Size = new System.Drawing.Size(201, 23);
+            this.txttelcdfuncionario.TabIndex = 3;
+            // 
+            // lblnome
+            // 
+            this.lblnome.AutoSize = true;
+            this.lblnome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblnome.Location = new System.Drawing.Point(23, 49);
+            this.lblnome.Name = "lblnome";
+            this.lblnome.Size = new System.Drawing.Size(40, 15);
+            this.lblnome.TabIndex = 4;
+            this.lblnome.Text = "Nome";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(24, 105);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 15);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Senha";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(33, 166);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "tel";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.PainelAnimais);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lblcadastradosadm);
+            this.Controls.Add(this.listfuncionarioscadastrados);
             this.Name = "Form2";
             this.Text = "Form2";
-            this.PainelAnimais.ResumeLayout(false);
-            this.wilBitGradientPanel1.ResumeLayout(false);
-            this.wilBitGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private Panel PainelAnimais;
-        private WiLBiT.WiLBiTGradientPanel wilBitGradientPanel1;
-        private Label label3;
-        private PictureBox pictureBox1;
+        private Label lblcadastradosadm;
+        private Button btncadastrarfuncionarios;
+        private TextBox textBox1;
+        private Panel panel1;
+        private ListView listfuncionarioscadastrados;
+        private Label label2;
+        private Label label1;
+        private Label lblnome;
+        private TextBox txttelcdfuncionario;
+        private TextBox txtsenhacdfuncionario;
     }
 }

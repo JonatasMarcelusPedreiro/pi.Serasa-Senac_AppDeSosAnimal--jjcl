@@ -24,6 +24,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
             Painel.Location = new Point(ClientSize.Width / 2 - Painel.Size.Width / 2, ClientSize.Height / 2 - Painel.Size.Height / 2);
+            Painel.Location = new Point(ClientSize.Width / 2 - Painel.Size.Width / 2, ClientSize.Height / 2 - Painel.Size.Height / 2);
 
             this.WindowState=FormWindowState.Maximized;
         }
@@ -48,7 +49,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             else
             {
                 // Todos os campos estão preenchidos, então abra a Form4
-                Form2 tela = new Form2();
+                Form4 tela = new Form4();
                 tela.Show();
                 
             }
@@ -74,6 +75,12 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void txtnome__TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form7 tela = new Form7();
+            tela.Show();
         }
     }
 

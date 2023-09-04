@@ -4,16 +4,16 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 {
     public partial class Form1 : Form
     {
-        
+
         public Form1()
         {
             InitializeComponent();
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            WindowState= FormWindowState.Maximized;
+            WindowState = FormWindowState.Maximized;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -26,32 +26,38 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             Painel.Location = new Point(ClientSize.Width / 2 - Painel.Size.Width / 2, ClientSize.Height / 2 - Painel.Size.Height / 2);
             Painel.Location = new Point(ClientSize.Width / 2 - Painel.Size.Width / 2, ClientSize.Height / 2 - Painel.Size.Height / 2);
 
-            this.WindowState=FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void wilBitButton1_Click(object sender, EventArgs e)
         {
 
-            string nome = txtnome.Texts; 
+            string nome = txtnome.Texts;
             string cpf = txtcpf.Texts;
             string tel = txttelefone.Texts;
 
 
 
-          
+
             if (nome == "" || cpf == "" || tel == "")
             {
-                
+
                 MessageBox.Show("Preencha todos os campos acima.");
-                
-                
+
+
             }
             else
             {
+                int cpf2 = int.Parse(txtcpf.Texts);
+                
+                Usuarios usuarios = new Usuarios(nome, cpf2, tel);
+                
+
+                usuarios.Insere_rapido(usuarios);
                 // Todos os campos estão preenchidos, então abra a Form4
                 Form4 tela = new Form4();
                 tela.Show();
-                
+
             }
         }
 

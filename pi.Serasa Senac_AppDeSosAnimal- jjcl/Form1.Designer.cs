@@ -28,189 +28,189 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.Painel = new WiLBiT.WiLBiTGradientPanel();
-            this.btnlogin = new WiLBiT.WiLBiTButton();
-            this.btncadastrocompleto = new WiLBiT.WiLBiTButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtnome = new WiLBiT.WiLBiTTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cadastrorapido = new WiLBiT.WiLBiTButton();
-            this.txtcpf = new WiLBiT.WiLBiTTextBox();
-            this.txttelefone = new WiLBiT.WiLBiTTextBox();
-            this.fontInstaller1 = new WiLBiT.FontInstaller(this.components);
-            this.fontsInstaller1 = new WK.Libraries.FontsInstallerNS.FontsInstaller(this.components);
-            this.fontInstaller2 = new WiLBiT.FontInstaller(this.components);
-            this.Painel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            Painel = new WiLBiT.WiLBiTGradientPanel();
+            btnlogin = new WiLBiT.WiLBiTButton();
+            btncadastrocompleto = new WiLBiT.WiLBiTButton();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            txtnome = new WiLBiT.WiLBiTTextBox();
+            pictureBox1 = new PictureBox();
+            cadastrorapido = new WiLBiT.WiLBiTButton();
+            txtcpf = new WiLBiT.WiLBiTTextBox();
+            txttelefone = new WiLBiT.WiLBiTTextBox();
+            fontInstaller1 = new WiLBiT.FontInstaller(components);
+            fontsInstaller1 = new WK.Libraries.FontsInstallerNS.FontsInstaller(components);
+            fontInstaller2 = new WiLBiT.FontInstaller(components);
+            Painel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // Painel
             // 
-            this.Painel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(49)))), ((int)(((byte)(130)))));
-            this.Painel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(65)))), ((int)(((byte)(135)))));
-            this.Painel.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.Painel.BorderRadius = 6;
-            this.Painel.BorderSize = 0;
-            this.Painel.Controls.Add(this.btnlogin);
-            this.Painel.Controls.Add(this.btncadastrocompleto);
-            this.Painel.Controls.Add(this.label6);
-            this.Painel.Controls.Add(this.label5);
-            this.Painel.Controls.Add(this.label4);
-            this.Painel.Controls.Add(this.label3);
-            this.Painel.Controls.Add(this.label2);
-            this.Painel.Controls.Add(this.label1);
-            this.Painel.Controls.Add(this.txtnome);
-            this.Painel.Controls.Add(this.pictureBox1);
-            this.Painel.Controls.Add(this.cadastrorapido);
-            this.Painel.Controls.Add(this.txtcpf);
-            this.Painel.Controls.Add(this.txttelefone);
-            this.Painel.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.Painel.Location = new System.Drawing.Point(-11, -36);
-            this.Painel.Name = "Painel";
-            this.Painel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Painel.Size = new System.Drawing.Size(839, 524);
-            this.Painel.TabIndex = 4;
-            this.Painel.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitGradientPanel1_Paint);
+            Painel.BackColor = Color.FromArgb(87, 49, 130);
+            Painel.BackColor2 = Color.FromArgb(113, 65, 135);
+            Painel.BorderColor = Color.PaleVioletRed;
+            Painel.BorderRadius = 6;
+            Painel.BorderSize = 0;
+            Painel.Controls.Add(btnlogin);
+            Painel.Controls.Add(btncadastrocompleto);
+            Painel.Controls.Add(label6);
+            Painel.Controls.Add(label5);
+            Painel.Controls.Add(label4);
+            Painel.Controls.Add(label3);
+            Painel.Controls.Add(label2);
+            Painel.Controls.Add(label1);
+            Painel.Controls.Add(txtnome);
+            Painel.Controls.Add(pictureBox1);
+            Painel.Controls.Add(cadastrorapido);
+            Painel.Controls.Add(txtcpf);
+            Painel.Controls.Add(txttelefone);
+            Painel.ForeColor = Color.DarkOrchid;
+            Painel.Location = new Point(-11, -36);
+            Painel.Name = "Painel";
+            Painel.RightToLeft = RightToLeft.No;
+            Painel.Size = new Size(839, 524);
+            Painel.TabIndex = 4;
+            Painel.Paint += wilBitGradientPanel1_Paint;
             // 
             // btnlogin
             // 
-            this.btnlogin.BackColor = System.Drawing.Color.Black;
-            this.btnlogin.BorderColor = System.Drawing.Color.Black;
-            this.btnlogin.BorderRadius = 15;
-            this.btnlogin.BorderSize = 0;
-            this.btnlogin.FlatAppearance.BorderSize = 0;
-            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnlogin.ForeColor = System.Drawing.Color.White;
-            this.btnlogin.Location = new System.Drawing.Point(486, 397);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(134, 22);
-            this.btnlogin.TabIndex = 12;
-            this.btnlogin.Text = "LOGIN";
-            this.btnlogin.UseVisualStyleBackColor = false;
-            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+            btnlogin.BackColor = Color.Black;
+            btnlogin.BorderColor = Color.Black;
+            btnlogin.BorderRadius = 15;
+            btnlogin.BorderSize = 0;
+            btnlogin.FlatAppearance.BorderSize = 0;
+            btnlogin.FlatStyle = FlatStyle.Flat;
+            btnlogin.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnlogin.ForeColor = Color.White;
+            btnlogin.Location = new Point(486, 397);
+            btnlogin.Name = "btnlogin";
+            btnlogin.Size = new Size(134, 22);
+            btnlogin.TabIndex = 12;
+            btnlogin.Text = "LOGIN";
+            btnlogin.UseVisualStyleBackColor = false;
+            btnlogin.Click += btnlogin_Click;
             // 
             // btncadastrocompleto
             // 
-            this.btncadastrocompleto.BackColor = System.Drawing.Color.Black;
-            this.btncadastrocompleto.BorderColor = System.Drawing.Color.Black;
-            this.btncadastrocompleto.BorderRadius = 20;
-            this.btncadastrocompleto.BorderSize = 0;
-            this.btncadastrocompleto.FlatAppearance.BorderSize = 0;
-            this.btncadastrocompleto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncadastrocompleto.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btncadastrocompleto.ForeColor = System.Drawing.Color.White;
-            this.btncadastrocompleto.Location = new System.Drawing.Point(196, 397);
-            this.btncadastrocompleto.Name = "btncadastrocompleto";
-            this.btncadastrocompleto.Size = new System.Drawing.Size(144, 22);
-            this.btncadastrocompleto.TabIndex = 11;
-            this.btncadastrocompleto.Text = "CADASTRO COMPLETO";
-            this.btncadastrocompleto.UseVisualStyleBackColor = false;
-            this.btncadastrocompleto.Click += new System.EventHandler(this.btncadastrocompleto_Click);
+            btncadastrocompleto.BackColor = Color.Black;
+            btncadastrocompleto.BorderColor = Color.Black;
+            btncadastrocompleto.BorderRadius = 20;
+            btncadastrocompleto.BorderSize = 0;
+            btncadastrocompleto.FlatAppearance.BorderSize = 0;
+            btncadastrocompleto.FlatStyle = FlatStyle.Flat;
+            btncadastrocompleto.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btncadastrocompleto.ForeColor = Color.White;
+            btncadastrocompleto.Location = new Point(196, 397);
+            btncadastrocompleto.Name = "btncadastrocompleto";
+            btncadastrocompleto.Size = new Size(144, 22);
+            btncadastrocompleto.TabIndex = 11;
+            btncadastrocompleto.Text = "CADASTRO COMPLETO";
+            btncadastrocompleto.UseVisualStyleBackColor = false;
+            btncadastrocompleto.Click += btncadastrocompleto_Click;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(229, 357);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 15);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "TEL";
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.Gainsboro;
+            label6.Location = new Point(229, 357);
+            label6.Name = "label6";
+            label6.Size = new Size(32, 16);
+            label6.TabIndex = 10;
+            label6.Text = "TEL";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label5.Location = new System.Drawing.Point(227, 303);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 15);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "CPF";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.Gainsboro;
+            label5.Location = new Point(227, 303);
+            label5.Name = "label5";
+            label5.Size = new Size(33, 16);
+            label5.TabIndex = 9;
+            label5.Text = "CPF";
+            label5.Click += label5_Click;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(221, 248);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 15);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "NOME";
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.Gainsboro;
+            label4.Location = new Point(221, 248);
+            label4.Name = "label4";
+            label4.Size = new Size(47, 16);
+            label4.TabIndex = 8;
+            label4.Text = "NOME";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label3.Location = new System.Drawing.Point(314, 86);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 23);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "ANIMAL RESCUE";
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.GhostWhite;
+            label3.Location = new Point(314, 86);
+            label3.Name = "label3";
+            label3.Size = new Size(183, 25);
+            label3.TabIndex = 7;
+            label3.Text = "ANIMAL RESCUE";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label2.Location = new System.Drawing.Point(324, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 23);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "BEM VINDO A ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.GhostWhite;
+            label2.Location = new Point(324, 63);
+            label2.Name = "label2";
+            label2.Size = new Size(155, 25);
+            label2.TabIndex = 6;
+            label2.Text = "BEM VINDO A ";
+            label2.Click += label2_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label1.Location = new System.Drawing.Point(335, 215);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 15);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "CADASTRO RÁPIDO";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.GhostWhite;
+            label1.Location = new Point(335, 215);
+            label1.Name = "label1";
+            label1.Size = new Size(136, 16);
+            label1.TabIndex = 5;
+            label1.Text = "CADASTRO RÁPIDO";
             // 
             // txtnome
             // 
-            this.txtnome.BackColor = System.Drawing.SystemColors.InfoText;
-            this.txtnome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.txtnome.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtnome.BorderRadius = 20;
-            this.txtnome.BorderSize = 2;
-            this.txtnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtnome.ForeColor = System.Drawing.Color.White;
-            this.txtnome.Location = new System.Drawing.Point(270, 234);
-            this.txtnome.Margin = new System.Windows.Forms.Padding(4);
-            this.txtnome.Multiline = false;
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtnome.PasswordChar = false;
-            this.txtnome.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtnome.PlaceholderText = "";
-            this.txtnome.Size = new System.Drawing.Size(250, 29);
-            this.txtnome.TabIndex = 2;
-            this.txtnome.Texts = "";
-            this.txtnome.UnderlinedStyle = false;
-            this.txtnome._TextChanged += new System.EventHandler(this.txtnome__TextChanged);
+            txtnome.BackColor = SystemColors.InfoText;
+            txtnome.BorderColor = Color.FromArgb(72, 116, 245);
+            txtnome.BorderFocusColor = Color.DeepSkyBlue;
+            txtnome.BorderRadius = 20;
+            txtnome.BorderSize = 2;
+            txtnome.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txtnome.ForeColor = Color.White;
+            txtnome.Location = new Point(270, 234);
+            txtnome.Margin = new Padding(4);
+            txtnome.Multiline = false;
+            txtnome.Name = "txtnome";
+            txtnome.Padding = new Padding(10, 7, 10, 7);
+            txtnome.PasswordChar = false;
+            txtnome.PlaceholderColor = Color.DarkGray;
+            txtnome.PlaceholderText = "";
+            txtnome.Size = new Size(250, 29);
+            txtnome.TabIndex = 2;
+            txtnome.Texts = "";
+            txtnome.UnderlinedStyle = false;
+            txtnome._TextChanged += txtnome__TextChanged;
             // 
             // pictureBox1
             // 
@@ -227,101 +227,98 @@
             // 
             // cadastrorapido
             // 
-            this.cadastrorapido.BackColor = System.Drawing.Color.Black;
-            this.cadastrorapido.BorderColor = System.Drawing.Color.Black;
-            this.cadastrorapido.BorderRadius = 15;
-            this.cadastrorapido.BorderSize = 0;
-            this.cadastrorapido.FlatAppearance.BorderSize = 0;
-            this.cadastrorapido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cadastrorapido.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cadastrorapido.ForeColor = System.Drawing.Color.White;
-            this.cadastrorapido.Location = new System.Drawing.Point(346, 397);
-            this.cadastrorapido.Name = "cadastrorapido";
-            this.cadastrorapido.Size = new System.Drawing.Size(134, 22);
-            this.cadastrorapido.TabIndex = 3;
-            this.cadastrorapido.Text = "CADASTRO RÁPIDO";
-            this.cadastrorapido.UseVisualStyleBackColor = false;
-            this.cadastrorapido.Click += new System.EventHandler(this.wilBitButton1_Click);
+            cadastrorapido.BackColor = Color.Black;
+            cadastrorapido.BorderColor = Color.Black;
+            cadastrorapido.BorderRadius = 15;
+            cadastrorapido.BorderSize = 0;
+            cadastrorapido.FlatAppearance.BorderSize = 0;
+            cadastrorapido.FlatStyle = FlatStyle.Flat;
+            cadastrorapido.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            cadastrorapido.ForeColor = Color.White;
+            cadastrorapido.Location = new Point(346, 397);
+            cadastrorapido.Name = "cadastrorapido";
+            cadastrorapido.Size = new Size(134, 22);
+            cadastrorapido.TabIndex = 3;
+            cadastrorapido.Text = "CADASTRO RÁPIDO";
+            cadastrorapido.UseVisualStyleBackColor = false;
+            cadastrorapido.Click += wilBitButton1_Click;
             // 
             // txtcpf
             // 
-            this.txtcpf.BackColor = System.Drawing.SystemColors.InfoText;
-            this.txtcpf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.txtcpf.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtcpf.BorderRadius = 20;
-            this.txtcpf.BorderSize = 2;
-            this.txtcpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtcpf.ForeColor = System.Drawing.Color.White;
-            this.txtcpf.Location = new System.Drawing.Point(270, 289);
-            this.txtcpf.Margin = new System.Windows.Forms.Padding(4);
-            this.txtcpf.Multiline = false;
-            this.txtcpf.Name = "txtcpf";
-            this.txtcpf.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtcpf.PasswordChar = false;
-            this.txtcpf.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtcpf.PlaceholderText = "";
-            this.txtcpf.Size = new System.Drawing.Size(250, 29);
-            this.txtcpf.TabIndex = 1;
-            this.txtcpf.Texts = "";
-            this.txtcpf.UnderlinedStyle = false;
+            txtcpf.BackColor = SystemColors.InfoText;
+            txtcpf.BorderColor = Color.FromArgb(72, 116, 245);
+            txtcpf.BorderFocusColor = Color.DeepSkyBlue;
+            txtcpf.BorderRadius = 20;
+            txtcpf.BorderSize = 2;
+            txtcpf.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txtcpf.ForeColor = Color.White;
+            txtcpf.Location = new Point(270, 289);
+            txtcpf.Margin = new Padding(4);
+            txtcpf.Multiline = false;
+            txtcpf.Name = "txtcpf";
+            txtcpf.Padding = new Padding(10, 7, 10, 7);
+            txtcpf.PasswordChar = false;
+            txtcpf.PlaceholderColor = Color.DarkGray;
+            txtcpf.PlaceholderText = "";
+            txtcpf.Size = new Size(250, 29);
+            txtcpf.TabIndex = 1;
+            txtcpf.Texts = "";
+            txtcpf.UnderlinedStyle = false;
             // 
             // txttelefone
             // 
-            this.txttelefone.BackColor = System.Drawing.SystemColors.InfoText;
-            this.txttelefone.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.txttelefone.BorderFocusColor = System.Drawing.Color.DeepSkyBlue;
-            this.txttelefone.BorderRadius = 20;
-            this.txttelefone.BorderSize = 2;
-            this.txttelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txttelefone.ForeColor = System.Drawing.Color.White;
-            this.txttelefone.Location = new System.Drawing.Point(270, 343);
-            this.txttelefone.Margin = new System.Windows.Forms.Padding(4);
-            this.txttelefone.Multiline = false;
-            this.txttelefone.Name = "txttelefone";
-            this.txttelefone.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txttelefone.PasswordChar = false;
-            this.txttelefone.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txttelefone.PlaceholderText = "";
-            this.txttelefone.Size = new System.Drawing.Size(250, 29);
-            this.txttelefone.TabIndex = 0;
-            this.txttelefone.Texts = "";
-            this.txttelefone.UnderlinedStyle = false;
+            txttelefone.BackColor = SystemColors.InfoText;
+            txttelefone.BorderColor = Color.FromArgb(72, 116, 245);
+            txttelefone.BorderFocusColor = Color.DeepSkyBlue;
+            txttelefone.BorderRadius = 20;
+            txttelefone.BorderSize = 2;
+            txttelefone.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txttelefone.ForeColor = Color.White;
+            txttelefone.Location = new Point(270, 343);
+            txttelefone.Margin = new Padding(4);
+            txttelefone.Multiline = false;
+            txttelefone.Name = "txttelefone";
+            txttelefone.Padding = new Padding(10, 7, 10, 7);
+            txttelefone.PasswordChar = false;
+            txttelefone.PlaceholderColor = Color.DarkGray;
+            txttelefone.PlaceholderText = "";
+            txttelefone.Size = new Size(250, 29);
+            txttelefone.TabIndex = 0;
+            txttelefone.Texts = "";
+            txttelefone.UnderlinedStyle = false;
             // 
             // fontsInstaller1
             // 
-            this.fontsInstaller1.AutoInstall = true;
-            this.fontsInstaller1.AutoRestart = true;
-            this.fontsInstaller1.ContainerControl = this;
-            this.fontsInstaller1.CustomInstallerDialog = null;
-            this.fontsInstaller1.DialogOptions.CollapsedContent = "{Fonts}";
-            this.fontsInstaller1.DialogOptions.Content = "In order for \'{AppName}\' to look neat and work effectively, {FontsRequiredExpress" +
-    "ion} to be installed in your system before proceeding. To view {FontsExpression}" +
-    ", click \"See details\".";
-            this.fontsInstaller1.DialogOptions.CustomIcon = null;
-            this.fontsInstaller1.DialogOptions.ShowAppIcon = true;
-            this.fontsInstaller1.DialogOptions.ShowCancelButton = false;
-            this.fontsInstaller1.DialogOptions.Title = "Fonts installation required";
-            this.fontsInstaller1.DialogOptions.UseElevationIcon = false;
-            this.fontsInstaller1.DialogOptions.WindowTitle = "{AppName}";
-            this.fontsInstaller1.FontsListBullet = "+";
-            this.fontsInstaller1.ParentForm = this;
-            this.fontsInstaller1.TestingMode = false;
+            fontsInstaller1.AutoInstall = true;
+            fontsInstaller1.AutoRestart = true;
+            fontsInstaller1.ContainerControl = this;
+            fontsInstaller1.CustomInstallerDialog = null;
+            fontsInstaller1.DialogOptions.CollapsedContent = "{Fonts}";
+            fontsInstaller1.DialogOptions.Content = "In order for '{AppName}' to look neat and work effectively, {FontsRequiredExpression} to be installed in your system before proceeding. To view {FontsExpression}, click \"See details\".";
+            fontsInstaller1.DialogOptions.CustomIcon = null;
+            fontsInstaller1.DialogOptions.ShowAppIcon = true;
+            fontsInstaller1.DialogOptions.ShowCancelButton = false;
+            fontsInstaller1.DialogOptions.Title = "Fonts installation required";
+            fontsInstaller1.DialogOptions.UseElevationIcon = false;
+            fontsInstaller1.DialogOptions.WindowTitle = "{AppName}";
+            fontsInstaller1.FontsListBullet = "+";
+            fontsInstaller1.ParentForm = this;
+            fontsInstaller1.TestingMode = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Painel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.Painel.ResumeLayout(false);
-            this.Painel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Painel);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            Painel.ResumeLayout(false);
+            Painel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

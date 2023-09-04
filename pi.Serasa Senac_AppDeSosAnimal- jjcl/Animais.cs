@@ -14,15 +14,15 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         public string animal;
         public string situacao;
         public string sexo;
-        public bool domestico;
+        
 
-        public Animais(int id, string animal, string situacao, string sexo, bool domestico)
+        public Animais(int id, string animal, string situacao, string sexo)
         {
             this.id = id;
             this.animal = animal;
             this.situacao = situacao;
             this.sexo = sexo;
-            this.domestico = domestico;
+            
         }
         public Animais()
         {
@@ -50,15 +50,15 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             string animal = linha["animal"].ToString();
             string situacao = linha["situacao"].ToString();
             string sexo = linha["sexo"].ToString();
-            bool domestico = linha["domestico"].ToString() == "1" ? true : false;
+            
 
-            Animais animais = new Animais(id, animal, situacao, sexo, domestico);
+            Animais animais = new Animais(id, animal, situacao, sexo);
             return animais;
         }
 
         public void Insere(Animais animais)
         {
-            string query = $"insert into animais (animal, situacao, sexo, domestico) values ('{animais.animal}', {animais.situacao}', {animais.sexo}', {animais.domestico} );";
+            string query = $"insert into animais (animal, situacao, sexo, domestico) values ('{animais.animal}', '{animais.situacao}', '{animais.sexo}' );";
             Conexao.executaquery(query);
         }
 

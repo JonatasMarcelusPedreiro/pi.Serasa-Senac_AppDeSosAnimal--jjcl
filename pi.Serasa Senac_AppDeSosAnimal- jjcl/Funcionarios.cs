@@ -12,17 +12,14 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
     {
         public int id;
         public string nome;
-        public int cpf;
-        public string email;
         public string senha;
         public string telefone;
 
-        public Funcionarios (int id, string nome, int cpf, string email, string senha, string telefone)
+        public Funcionarios (int id, string nome,  string senha, string telefone)
         {
             this.id = id;
             this.nome = nome;
-            this.cpf = cpf;
-            this.email = email;
+            
             this.senha = senha;
             this.telefone = telefone;
         }
@@ -49,18 +46,16 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
             int id = int.Parse(linha["id"].ToString());
             string nome = linha["nome"].ToString();
-            int cpf = int.Parse(linha["cpf"].ToString());
-            string email = linha["email"].ToString();
             string senha = linha["senha"].ToString();
             string telefone = linha["telefone"].ToString();
 
-            Funcionarios funcionarios = new Funcionarios(id, nome, cpf, email, senha, telefone);
+            Funcionarios funcionarios = new Funcionarios(id, nome, senha, telefone);
             return funcionarios;
         }
 
         public void Insere(Funcionarios funcionarios)
         {
-            string query = $"insert into funcionarios (nome, cpf, email, senha, telefone) values ('{funcionarios.nome}', {funcionarios.cpf}', {funcionarios.email}', {funcionarios.senha}', {funcionarios.telefone} );";
+            string query = $"insert into funcionarios (nome, senha, telefone) values ('{funcionarios.nome}', '{funcionarios.senha}', '{funcionarios.telefone}' );";
             Conexao.executaquery(query);
         }
 

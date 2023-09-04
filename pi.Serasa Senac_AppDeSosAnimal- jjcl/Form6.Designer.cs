@@ -286,18 +286,17 @@
             // 
             // Form6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Painel);
-            this.Name = "Form6";
-            this.Text = "Form6";
-            this.Load += new System.EventHandler(this.Form6_Load);
-            this.Painel.ResumeLayout(false);
-            this.Painel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Painel);
+            Name = "Form6";
+            Text = "Form6";
+            Load += Form6_Load;
+            Painel.ResumeLayout(false);
+            Painel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

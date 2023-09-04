@@ -30,16 +30,16 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void btncdcompleto_Click(object sender, EventArgs e)
         {
 
-            string nome2 = txtcdcompletonome.Texts;
-            string cpf2 = txtcdcompletocpf.Texts;
-            string tel2 = txtcdcompletotel.Texts;
-            string senha = txtcdcompletosenha.Texts;
+            string nome = txtdecompletonome.Texts;
+            string cpf = txtcdcompletocpf.Texts;
+            string telefone = txtcdcompletotel.Texts;
             string email = txtcdcompletoemail.Texts;
+            string senha = txtcdcompletosenha.Texts;
 
 
 
 
-            if (nome2 == "" || cpf2 == "" || tel2 == "" || email == "" || senha == "")
+            if (nome == "" || cpf == "" || telefone == ""|| email == ""|| senha == "")
             {
 
                 MessageBox.Show("Preencha todos os campos acima.");
@@ -48,6 +48,12 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             }
             else
             {
+                int cpf = int.Parse(txtcdcompletocpf.Texts);
+                
+                Usuarios usuarios = new Usuarios(nome, cpf, email, senha, telefone);
+
+
+                usuarios.Insere_completo(usuarios);
                 // Todos os campos estão preenchidos, então abra a Form4
                 Form4 tela = new Form4();
                 tela.Show();

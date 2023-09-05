@@ -15,7 +15,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         public string senha;
         public string telefone;
 
-        public Funcionarios (string nome,  string senha, string telefone)
+        public Funcionarios (int id, string nome,  string senha, string telefone)
         {
             this.id = id;
             this.nome = nome;
@@ -49,7 +49,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             string senha = linha["senha"].ToString();
             string telefone = linha["telefone"].ToString();
 
-            Funcionarios funcionarios = new Funcionarios( nome, senha, telefone);
+            Funcionarios funcionarios = new Funcionarios(id, nome, senha, telefone);
             return funcionarios;
         }
 

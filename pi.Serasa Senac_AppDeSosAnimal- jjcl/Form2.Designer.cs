@@ -1,4 +1,4 @@
-﻿namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
+namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 {
     partial class Form2
     {
@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblcadastradosadm = new System.Windows.Forms.Label();
-            this.txtnomeFuncionario = new System.Windows.Forms.TextBox();
-            this.btncadastrarfuncionarios = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblnome = new System.Windows.Forms.Label();
-            this.txttelcdfuncionario = new System.Windows.Forms.TextBox();
-            this.txtsenhacdfuncionario = new System.Windows.Forms.TextBox();
-            this.listfuncionarioscadastrados = new System.Windows.Forms.ListView();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            lblcadastradosadm = new Label();
+            txtnomeFuncionario = new TextBox();
+            btncadastrarfuncionarios = new Button();
+            panel1 = new Panel();
+            label2 = new Label();
+            label1 = new Label();
+            lblnome = new Label();
+            txttelcdfuncionario = new TextBox();
+            txtsenhacdfuncionario = new TextBox();
+            dataGridView1 = new DataGridView();
+            panel1.SuspendLayout();ataGridView1).Be
+            ((System.ComponentModel.ISupportInitialize)dginInit();
+            SuspendLayout();
             // 
             // lblcadastradosadm
             // 
@@ -127,32 +128,31 @@
             this.txtsenhacdfuncionario.Size = new System.Drawing.Size(201, 23);
             this.txtsenhacdfuncionario.TabIndex = 2;
             // 
-            // listfuncionarioscadastrados
+            // dataGridView1
             // 
-            this.listfuncionarioscadastrados.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.listfuncionarioscadastrados.ForeColor = System.Drawing.SystemColors.Window;
-            this.listfuncionarioscadastrados.Location = new System.Drawing.Point(420, 71);
-            this.listfuncionarioscadastrados.Name = "listfuncionarioscadastrados";
-            this.listfuncionarioscadastrados.Size = new System.Drawing.Size(317, 325);
-            this.listfuncionarioscadastrados.TabIndex = 1;
-            this.listfuncionarioscadastrados.UseCompatibleStateImageBehavior = false;
-            this.listfuncionarioscadastrados.View = System.Windows.Forms.View.List;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(412, 71);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(328, 331);
+            dataGridView1.TabIndex = 4;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblcadastradosadm);
-            this.Controls.Add(this.listfuncionarioscadastrados);
-            this.Name = "Form2";
-            this.Text = "Form2";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(dataGridView1);
+            Controls.Add(panel1);
+            Controls.Add(lblcadastradosadm);
+            Name = "Form2";
+            Text = "Form2";
+            Load += Form2_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -160,11 +160,11 @@
         private Button btncadastrarfuncionarios;
         private TextBox txtnomeFuncionario;
         private Panel panel1;
-        private ListView listfuncionarioscadastrados;
         private Label label2;
         private Label label1;
         private Label lblnome;
         private TextBox txttelcdfuncionario;
         private TextBox txtsenhacdfuncionario;
+        private DataGridView dataGridView1;
     }
 }

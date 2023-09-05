@@ -38,8 +38,8 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             txttelcdfuncionario = new TextBox();
             txtsenhacdfuncionario = new TextBox();
             dataGridView1 = new DataGridView();
-            panel1.SuspendLayout();ataGridView1).Be
-            ((System.ComponentModel.ISupportInitialize)dginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // lblcadastradosadm

@@ -19,25 +19,25 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void btnadmentrar_Click(object sender, EventArgs e)
         {
-            
+
             string nomeadm = txtnomeadm.Text;
-            string senhaadm = txtnomeadm.Text;
-            
-            
+            string senhaadm = txtsenhaadm.Text;
 
 
 
 
-            if (nomeadm == "adm" || senhaadm == "adm123" )
+
+
+            if (nomeadm == "adm" && senhaadm == "adm123")
             {
 
-                
+
                 // Todos os campos estão preenchidos, então abra a Form4
                 Form2 tela = new Form2();
                 tela.Show();
 
 
-               
+
 
             }
             else

@@ -45,6 +45,11 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void btncadastrarfuncionarios_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btncadastrarfuncionarios_Click_1(object sender, EventArgs e)
+        {
             int id = 0;
             string nome = txtnomeFuncionario.Text;
             string senha = txtsenhacdfuncionario.Text;
@@ -62,16 +67,11 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 txtnomeFuncionario.Clear();
                 txtsenhacdfuncionario.Clear();
                 txttelcdfuncionario.Clear();
-                
 
-                
+
+
                 atualizainterface();
             }
-        }
-
-        private void btncadastrarfuncionarios_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

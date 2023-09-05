@@ -17,10 +17,16 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             Funcionarios funcionarios = new Funcionarios();
 
             List<Funcionarios> list_funcionarios = funcionarios.busca_todos();
+            dataGridView1.Rows.Clear();
+            dataGridView1.Columns.Add("ID", "ID");
+            dataGridView1.Columns.Add("NOME", "NOME");
+            dataGridView1.Columns.Add("TELEFONE", "TELEFONE");
             foreach (Funcionarios a in list_funcionarios)
             {
-                listfuncionarioscadastrados.Items.Add($"{a.id} - {a.nome} - {a.telefone} ");
+                dataGridView1.Rows.Add(a.id, a.nome, a.telefone);
             }
+
+
         }
         public Form2()
         {
@@ -34,11 +40,12 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void Form2_Load(object sender, EventArgs e)
         {
-           atualizainterface();
+            atualizainterface();
         }
 
         private void btncadastrarfuncionarios_Click(object sender, EventArgs e)
         {
+            int id = 0;
             string nome = txtnomeFuncionario.Text;
             string senha = txtsenhacdfuncionario.Text;
             string tel = txttelcdfuncionario.Text;
@@ -49,12 +56,16 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             }
             else
             {
-                Funcionarios funcionarios = new Funcionarios(nome, senha, tel);
+                Funcionarios funcionarios = new Funcionarios(id, nome, senha, tel);
 
                 funcionarios.Insere(funcionarios);
                 txtnomeFuncionario.Clear();
                 txtsenhacdfuncionario.Clear();
                 txttelcdfuncionario.Clear();
+                
+
+                
+                atualizainterface();
             }
         }
     }

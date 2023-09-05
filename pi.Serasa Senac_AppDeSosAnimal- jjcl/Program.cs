@@ -13,5 +13,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }
+        public static Funcionarios funcionarios = new Funcionarios();
+        public static List<Funcionarios> list_funcionarios = funcionarios.busca_todos();
     }
 }

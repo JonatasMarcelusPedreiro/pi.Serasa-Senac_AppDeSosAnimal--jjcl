@@ -37,8 +37,9 @@
             lblnome = new Label();
             txttelcdfuncionario = new TextBox();
             txtsenhacdfuncionario = new TextBox();
-            listfuncionarioscadastrados = new ListView();
+            dataGridView1 = new DataGridView();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // lblcadastradosadm
@@ -127,31 +128,29 @@
             txtsenhacdfuncionario.Size = new Size(201, 23);
             txtsenhacdfuncionario.TabIndex = 2;
             // 
-            // listfuncionarioscadastrados
+            // dataGridView1
             // 
-            listfuncionarioscadastrados.BackColor = SystemColors.InactiveCaptionText;
-            listfuncionarioscadastrados.ForeColor = SystemColors.Window;
-            listfuncionarioscadastrados.Location = new Point(420, 71);
-            listfuncionarioscadastrados.Name = "listfuncionarioscadastrados";
-            listfuncionarioscadastrados.Size = new Size(317, 325);
-            listfuncionarioscadastrados.TabIndex = 1;
-            listfuncionarioscadastrados.UseCompatibleStateImageBehavior = false;
-            listfuncionarioscadastrados.View = View.List;
-            listfuncionarioscadastrados.SelectedIndexChanged += listfuncionarioscadastrados_SelectedIndexChanged;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(412, 71);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(328, 331);
+            dataGridView1.TabIndex = 4;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dataGridView1);
             Controls.Add(panel1);
             Controls.Add(lblcadastradosadm);
-            Controls.Add(listfuncionarioscadastrados);
             Name = "Form2";
             Text = "Form2";
             Load += Form2_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -161,11 +160,11 @@
         private Button btncadastrarfuncionarios;
         private TextBox txtnomeFuncionario;
         private Panel panel1;
-        private ListView listfuncionarioscadastrados;
         private Label label2;
         private Label label1;
         private Label lblnome;
         private TextBox txttelcdfuncionario;
         private TextBox txtsenhacdfuncionario;
+        private DataGridView dataGridView1;
     }
 }

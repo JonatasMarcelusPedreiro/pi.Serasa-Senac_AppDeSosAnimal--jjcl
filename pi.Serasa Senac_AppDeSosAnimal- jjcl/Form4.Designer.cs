@@ -59,10 +59,11 @@
             this.Painel.Controls.Add(this.label1);
             this.Painel.Controls.Add(this.wilBitButton1);
             this.Painel.Controls.Add(this.btnsos);
+            this.Painel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Painel.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.Painel.Location = new System.Drawing.Point(-11, -41);
+            this.Painel.Location = new System.Drawing.Point(0, 0);
             this.Painel.Name = "Painel";
-            this.Painel.Size = new System.Drawing.Size(900, 533);
+            this.Painel.Size = new System.Drawing.Size(1904, 1041);
             this.Painel.TabIndex = 5;
             // 
             // label4
@@ -71,7 +72,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label4.Location = new System.Drawing.Point(132, 355);
+            this.label4.Location = new System.Drawing.Point(687, 527);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 13);
             this.label4.TabIndex = 18;
@@ -87,7 +88,7 @@
             this.btnanimais.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnanimais.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnanimais.ForeColor = System.Drawing.Color.White;
-            this.btnanimais.Location = new System.Drawing.Point(110, 224);
+            this.btnanimais.Location = new System.Drawing.Point(658, 378);
             this.btnanimais.Name = "btnanimais";
             this.btnanimais.Size = new System.Drawing.Size(158, 118);
             this.btnanimais.TabIndex = 17;
@@ -105,9 +106,9 @@
             this.wilBitGradientPanel1.Controls.Add(this.label3);
             this.wilBitGradientPanel1.Controls.Add(this.pictureBox1);
             this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitGradientPanel1.Location = new System.Drawing.Point(3, 37);
+            this.wilBitGradientPanel1.Location = new System.Drawing.Point(3, -5);
             this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(894, 127);
+            this.wilBitGradientPanel1.Size = new System.Drawing.Size(2009, 169);
             this.wilBitGradientPanel1.TabIndex = 16;
             // 
             // label3
@@ -116,7 +117,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label3.Location = new System.Drawing.Point(283, 56);
+            this.label3.Location = new System.Drawing.Point(854, 92);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(210, 30);
             this.label3.TabIndex = 7;
@@ -127,7 +128,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Image = global::pi.Serasa_Senac_AppDeSosAnimal__jjcl.Properties.Resources.ATXC0623;
-            this.pictureBox1.Location = new System.Drawing.Point(431, -24);
+            this.pictureBox1.Location = new System.Drawing.Point(1028, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(243, 205);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -141,7 +142,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label2.Location = new System.Drawing.Point(575, 355);
+            this.label2.Location = new System.Drawing.Point(1194, 527);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 13);
             this.label2.TabIndex = 15;
@@ -153,7 +154,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label1.Location = new System.Drawing.Point(338, 355);
+            this.label1.Location = new System.Drawing.Point(915, 527);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 13);
             this.label1.TabIndex = 14;
@@ -169,7 +170,7 @@
             this.wilBitButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wilBitButton1.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wilBitButton1.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton1.Location = new System.Drawing.Point(550, 224);
+            this.wilBitButton1.Location = new System.Drawing.Point(1160, 367);
             this.wilBitButton1.Name = "wilBitButton1";
             this.wilBitButton1.Size = new System.Drawing.Size(158, 118);
             this.wilBitButton1.TabIndex = 13;
@@ -187,7 +188,7 @@
             this.btnsos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsos.Font = new System.Drawing.Font("Bookman Old Style", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnsos.ForeColor = System.Drawing.Color.White;
-            this.btnsos.Location = new System.Drawing.Point(338, 224);
+            this.btnsos.Location = new System.Drawing.Point(923, 367);
             this.btnsos.Name = "btnsos";
             this.btnsos.Size = new System.Drawing.Size(158, 118);
             this.btnsos.TabIndex = 12;
@@ -199,7 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.Painel);
             this.Name = "Form4";
             this.Text = "Form4";

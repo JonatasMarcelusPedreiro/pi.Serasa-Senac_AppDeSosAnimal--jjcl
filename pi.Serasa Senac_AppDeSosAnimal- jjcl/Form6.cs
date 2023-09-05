@@ -60,5 +60,20 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
             }
         }
+
+        private void Painel_Paint_1(object sender, PaintEventArgs e)
+        {
+            Painelcadastrar.Location = new Point((Painelcadastrar.ClientSize.Width - Painelcadastrar.Width) / 2, (Painelcadastrar.ClientSize.Height - Painelcadastrar.Height) / 2);
+
+            Painelcadastrar.Dock = DockStyle.Fill;
+            this.WindowState = FormWindowState.Maximized;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form1 tela = new Form1();
+            tela.Show();
+        }
     }
 }

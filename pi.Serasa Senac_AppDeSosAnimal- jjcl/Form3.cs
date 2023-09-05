@@ -26,6 +26,16 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
             Painel3.Location = new Point(ClientSize.Width / 2 - Painel3.Size.Width / 2, ClientSize.Height / 2 - Painel3.Size.Height / 2);
+            
+            Painel3.Dock = DockStyle.Fill;
+            this.WindowState = FormWindowState.Maximized;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form1 tela = new Form1();
+            tela.Show();
         }
     }
 }

@@ -23,9 +23,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
-            Painel.Location = new Point(ClientSize.Width / 2 - Painel.Size.Width / 2, ClientSize.Height / 2 - Painel.Size.Height / 2);
-            Painel.Location = new Point(ClientSize.Width / 2 - Painel.Size.Width / 2, ClientSize.Height / 2 - Painel.Size.Height / 2);
-
+            
             this.WindowState = FormWindowState.Maximized;
         }
 
@@ -85,7 +83,66 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            
+            
             Form7 tela = new Form7();
+            tela.Show();
+        }
+
+        private void Painel_Paint(object sender, PaintEventArgs e)
+        {
+            Painel.Location = new Point((Painel.ClientSize.Width - Painel.Width) / 2, (Painel.ClientSize.Height - Painel.Height) / 2);
+
+            this.WindowState = FormWindowState.Maximized;
+            Painel.Dock = DockStyle.Fill;
+
+
+        }
+
+        private void btncadastrocompleto_Click_1(object sender, EventArgs e)
+        {
+            Form6 tela = new Form6();
+            tela.Show();
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            Painel.Location = new Point((Painel.ClientSize.Width - Painel.Width) / 2, (Painel.ClientSize.Height - Painel.Height) / 2);
+        }
+
+        private void cadastrorapido_Click(object sender, EventArgs e)
+        {
+
+            string nome = txtnome.Texts;
+            string cpf = txtcpf.Texts;
+            string tel = txttelefone.Texts;
+
+
+            if (nome == "" || cpf == "" || tel == "")
+            {
+
+                MessageBox.Show("Preencha todos os campos acima.");
+
+
+            }
+            else
+            {
+                int cpf2 = int.Parse(txtcpf.Texts);
+
+                Usuarios usuarios = new Usuarios(nome, cpf2, tel);
+
+
+                usuarios.Insere_rapido(usuarios);
+                // Todos os campos estão preenchidos, então abra a Form4
+                Form4 tela = new Form4();
+                tela.Show();
+
+            }
+        }
+
+        private void btnlogin_Click_1(object sender, EventArgs e)
+        {
+            Form3 tela = new Form3();
             tela.Show();
         }
     }

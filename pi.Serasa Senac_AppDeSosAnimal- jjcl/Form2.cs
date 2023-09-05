@@ -57,5 +57,10 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 txttelcdfuncionario.Clear();
             }
         }
+
+        private void btncadastrarfuncionarios_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

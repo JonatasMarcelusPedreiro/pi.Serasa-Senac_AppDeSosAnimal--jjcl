@@ -59,6 +59,18 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             Conexao.executaquery(query);
         }
 
+        public Funcionarios Login(string nome, string senha)
+        {
+            string query = $"SELECT * FROM usuarios WHERE nome = '{nome}' AND senha = '{senha}';";
+            DataTable tabela = Conexao.executaquery(query);
+            if (tabela.Rows.Count == 0)
+                return null;
+
+            Funcionarios funcionarios = carrega_dados(tabela.Rows[0]);
+
+            return funcionarios;
+        }
+
         public Funcionarios Busca_ID(int id)
         {
             string query = $"select * from funcionarios where id = {id};";

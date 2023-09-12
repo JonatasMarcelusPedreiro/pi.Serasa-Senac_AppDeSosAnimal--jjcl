@@ -56,25 +56,22 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             string nome = txtnomeadm.Text;
             string senha = txtsenhaadm.Text;
             Funcionarios f = new Funcionarios();
-            Funcionarios ff = new Funcionarios();
-            f.Busca_nome(nome);
-            ff.Busca_senha(senha);
-            f = f.Busca_nome(nome);
-            ff = f.Busca_senha(senha);
+            f = f.Login(nome, senha);
             if(nome == "" && senha == "")
             {
-
                 MessageBox.Show("Usuário ou senha incorreta");
-
+                return;
             }
-            else
+            if(f == null)
             {
-                // Todos os campos estão preenchidos, então abra a Form4
-                Form5 tela = new Form5();
-                tela.Show();
-
-
+                MessageBox.Show("Login incorreto");
+                return;
             }
+            
+            // Todos os campos estão preenchidos, então abra a Form4
+            Form5 tela = new Form5();
+            tela.Show();
+            
         }
     }
 }

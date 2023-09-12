@@ -63,17 +63,17 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void btnanimais_Click(object sender, EventArgs e)
         {
-            string link2 = "https://64f21ed21653d.site123.me/";
-            ProcessStartInfo psi = new ProcessStartInfo
-            {
-                FileName = link2,
-                UseShellExecute = true
-            };
+            Form8 tela = new Form8();
+            tela.Show();
 
-            Process.Start(psi);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wilBitButton2_Click(object sender, EventArgs e)
         {
 
         }

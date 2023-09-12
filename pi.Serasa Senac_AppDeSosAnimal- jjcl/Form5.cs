@@ -16,12 +16,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         public Form5 form5Reference;
 
         InfoAnimais infoAnimais = new InfoAnimais();
-
-        public InfoAnimais(Form5 form5)
-        {
-            InitializeComponent();
-            form5Reference = form5; // Armazena a referência de Form1
-        }
+        private Image pbInfoAnimais;
 
         public Form5()
         {
@@ -81,7 +76,13 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 // Adicione o PictureBox e o Label ao novo formulário
                 novoForm.Controls.Add(pictureBox);
                 novoForm.Controls.Add(label);
+
             }
+        }
+
+        private void btnImagem_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,5 +16,15 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
             InitializeComponent();
         }
+
+        private void InfoAnimais_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbInfoAnimais_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

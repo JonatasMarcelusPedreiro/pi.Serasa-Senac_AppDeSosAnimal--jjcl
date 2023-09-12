@@ -43,6 +43,7 @@
             this.pbInfoAnimais.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbInfoAnimais.TabIndex = 0;
             this.pbInfoAnimais.TabStop = false;
+            this.pbInfoAnimais.Click += new System.EventHandler(this.pbInfoAnimais_Click);
             // 
             // lblAnimal
             // 
@@ -87,6 +88,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InfoAnimais";
             this.Text = "Form9";
+            this.Load += new System.EventHandler(this.InfoAnimais_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbInfoAnimais)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

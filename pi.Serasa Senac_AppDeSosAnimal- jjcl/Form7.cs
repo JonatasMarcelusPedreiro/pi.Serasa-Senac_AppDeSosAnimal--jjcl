@@ -53,11 +53,15 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             string senhafuncionario = txtnomeadm.Text;
 
 
-
-
-
-
-            if (nomefuncionario == "" || senhafuncionario == "")
+            string nome = txtnomeadm.Text;
+            string senha = txtsenhaadm.Text;
+            Funcionarios f = new Funcionarios();
+            Funcionarios ff = new Funcionarios();
+            f.Busca_nome(nome);
+            ff.Busca_senha(senha);
+            f = f.Busca_nome(nome);
+            ff = f.Busca_senha(senha);
+            if(nome == "" && senha == "")
             {
 
                 MessageBox.Show("Usuário ou senha incorreta");

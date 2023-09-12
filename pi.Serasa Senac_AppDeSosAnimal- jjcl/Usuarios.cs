@@ -12,13 +12,13 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
     {
         public int id;
         public string nome;
-        public int cpf;
+        public string cpf;
         public string email;
         public string senha;
         public string telefone;
 
         //cadastro completo
-        public Usuarios(string nome, int cpf, string email, string senha, string telefone)
+        public Usuarios(string nome, string cpf, string email, string senha, string telefone)
         {
             this.id = id;
             this.nome = nome;
@@ -32,7 +32,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         }
         //cadastro rapido
-        public Usuarios (string nome, int cpf, string telefone)
+        public Usuarios (string nome, string cpf, string telefone)
         {
             this.nome = nome;
             this.cpf = cpf;
@@ -58,7 +58,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
             int id = int.Parse(linha["id"].ToString());
             string nome = linha["nome"].ToString();
-            int cpf = int.Parse(linha["cpf"].ToString());
+            string cpf = (linha["cpf"].ToString());
             string email = linha["email"].ToString();
             string senha = linha["senha"].ToString();
             string telefone = linha["telefone"].ToString();
@@ -93,6 +93,8 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             string query = $"select * from usuarios where nome = '{nome}' and senha = '{senha}';";
 
             DataTable tabela = Conexao.executaquery(query);
+            if (tabela.Rows.Count == 0)
+                return null;
             Usuarios usuarios = carrega_dados(tabela.Rows[0]);
 
             return usuarios;

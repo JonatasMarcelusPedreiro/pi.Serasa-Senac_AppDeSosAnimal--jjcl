@@ -19,6 +19,21 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
+            string nome = TXTnome.Texts;
+            string senha = TXTsenha.Texts;
+            
+            Usuarios u = new Usuarios();
+            u = u.Login(nome, senha);
+            if (nome == "" && senha == "")
+            {
+                MessageBox.Show("Usuário ou senha incorreta");
+                return;
+            }
+            if (u == null)
+            {
+                MessageBox.Show("Login incorreto");
+                return;
+            }
             Form4 tela = new Form4();
             tela.Show();
         }
@@ -26,7 +41,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
             Painel3.Location = new Point(ClientSize.Width / 2 - Painel3.Size.Width / 2, ClientSize.Height / 2 - Painel3.Size.Height / 2);
-            
+
             Painel3.Dock = DockStyle.Fill;
             this.WindowState = FormWindowState.Maximized;
 

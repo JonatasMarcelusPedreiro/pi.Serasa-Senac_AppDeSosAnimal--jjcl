@@ -48,9 +48,9 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             }
             else
             {
-                int cpf2 = int.Parse(cpf);
                 
-                Usuarios usuarios = new Usuarios(nome, cpf2, email, senha, telefone);
+                
+                Usuarios usuarios = new Usuarios(nome, cpf, email, senha, telefone);
 
 
                 usuarios.Insere_completo(usuarios);

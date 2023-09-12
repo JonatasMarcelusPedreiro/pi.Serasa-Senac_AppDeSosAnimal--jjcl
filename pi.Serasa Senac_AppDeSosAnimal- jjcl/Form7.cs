@@ -49,10 +49,6 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string nomefuncionario = txtnomeadm.Text;
-            string senhafuncionario = txtnomeadm.Text;
-
-
             string nome = txtnomeadm.Text;
             string senha = txtsenhaadm.Text;
             Funcionarios f = new Funcionarios();

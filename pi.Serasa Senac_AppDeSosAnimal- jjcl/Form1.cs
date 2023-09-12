@@ -46,9 +46,9 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             }
             else
             {
-                int cpf2 = int.Parse(txtcpf.Texts);
                 
-                Usuarios usuarios = new Usuarios(nome, cpf2, tel);
+                
+                Usuarios usuarios = new Usuarios(nome, cpf, tel);
                 
 
                 usuarios.Insere_rapido(usuarios);
@@ -127,9 +127,9 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             }
             else
             {
-                int cpf2 = int.Parse(txtcpf.Texts);
+                
 
-                Usuarios usuarios = new Usuarios(nome, cpf2, tel);
+                Usuarios usuarios = new Usuarios(nome, cpf, tel);
 
 
                 usuarios.Insere_rapido(usuarios);

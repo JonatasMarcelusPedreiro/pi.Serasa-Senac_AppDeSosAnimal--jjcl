@@ -81,7 +81,6 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 // Adicione o PictureBox e o Label ao novo formulário
                 novoForm.Controls.Add(pictureBox);
                 novoForm.Controls.Add(label);
-
             }
         }
     }

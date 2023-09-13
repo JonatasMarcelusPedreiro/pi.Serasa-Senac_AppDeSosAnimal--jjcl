@@ -77,7 +77,27 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             string query = $"insert into usuarios (nome, cpf, telefone) values ('{usuarios.nome}', {usuarios.cpf}, '{usuarios.telefone}' );";
             Conexao.executaquery(query);
         }
+        public Usuarios verifica_nome(string nome)
+        {
+            string query = $"select * from usuarios where nome = '{nome}';";
+            DataTable tabela = Conexao.executaquery(query);
+            if (tabela.Rows.Count == 0)
+                return null;
+            Usuarios usuarios = carrega_dados(tabela.Rows[0]);
 
+            return usuarios;
+        }
+        
+        public Usuarios verifica_cpf(string cpf)
+        {
+            string query = $"select * from usuarios where cpf = '{cpf}';";
+            DataTable tabela = Conexao.executaquery(query);
+            if (tabela.Rows.Count == 0)
+                return null;
+            Usuarios usuarios = carrega_dados(tabela.Rows[0]);
+
+            return usuarios;
+        }
         public Usuarios Busca_ID(int id)
         {
             string query = $"select * from usuarios where id = {id};";

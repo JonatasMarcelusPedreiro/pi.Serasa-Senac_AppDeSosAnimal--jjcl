@@ -35,30 +35,41 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             string telefone = txtcdcompletotel.Texts;
             string email = txtcdcompletoemail.Texts;
             string senha = txtcdcompletosenha.Texts;
+            
 
 
-
-
-            if (nome == "" || cpf == "" || telefone == ""|| email == ""|| senha == "")
+            if (nome == "" || cpf == "" || telefone == "" || email == "" || senha == "")
             {
 
                 MessageBox.Show("Preencha todos os campos acima.");
+                return;
+            }
+            Usuarios u = new Usuarios();
+            u = u.verifica_cpf(cpf);
+            if (u == null)
+            {
+                if (cpf.Length != 11)
+                {
+                    MessageBox.Show("CPF invalido");
+                    return;
+                }
+                Usuarios usuarios = new Usuarios(nome, cpf, telefone, email, senha);
+
+
+                usuarios.Insere_completo(usuarios);
+                // Todos os campos estão preenchidos, então abra a Form4
+                Form3 tela = new Form3();
+                tela.Show();
 
 
             }
             else
             {
-                
-                
-                Usuarios usuarios = new Usuarios(nome, cpf, email, senha, telefone);
-
-
-                usuarios.Insere_completo(usuarios);
-                // Todos os campos estão preenchidos, então abra a Form4
-                Form4 tela = new Form4();
-                tela.Show();
-
+                MessageBox.Show("CPF já está em uso");
+                return;
             }
+
+            
         }
 
         private void Painel_Paint_1(object sender, PaintEventArgs e)

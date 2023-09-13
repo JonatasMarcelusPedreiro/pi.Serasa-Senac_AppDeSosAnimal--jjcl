@@ -122,21 +122,26 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             {
 
                 MessageBox.Show("Preencha todos os campos acima.");
-
-
+                return;
             }
-            else
+            Usuarios u = new Usuarios();
+            u = u.verifica_nome(nome);
+            if (u == null)
             {
-                
-
                 Usuarios usuarios = new Usuarios(nome, cpf, tel);
 
 
                 usuarios.Insere_rapido(usuarios);
                 // Todos os campos estão preenchidos, então abra a Form4
-                Form4 tela = new Form4();
+                Form3 tela = new Form3();
                 tela.Show();
 
+
+            }
+            else
+            {
+                MessageBox.Show("Nome ja esta em uso");
+                return;
             }
         }
 

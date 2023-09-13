@@ -11,7 +11,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
     internal class Conexao
     {
         string teste;
-        const string host = "10.60.45.22";
+        const string host = "192.168.57.178";
         const string banco = "trabalho_final";
         const string usuario = "senac";
         const string senha = "senac";

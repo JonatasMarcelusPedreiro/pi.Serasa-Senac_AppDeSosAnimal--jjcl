@@ -58,8 +58,12 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             if (nome == "" || senha == "" || tel == "")
             {
                 MessageBox.Show("Preencha todos os campos!!");
+                return;
             }
-            else
+            
+            Usuarios u = new Usuarios();
+            u = u.verifica_nome(nome);
+            if (u == null)
             {
                 Funcionarios funcionarios = new Funcionarios(id, nome, senha, tel);
 
@@ -67,11 +71,19 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 txtnomeFuncionario.Clear();
                 txtsenhacdfuncionario.Clear();
                 txttelcdfuncionario.Clear();
-
-
-
                 atualizainterface();
             }
+            else
+            {
+                MessageBox.Show("Nome não permitido");
+                return;
+            }
+           
+               
+
+
+
+            
         }
     }
 }

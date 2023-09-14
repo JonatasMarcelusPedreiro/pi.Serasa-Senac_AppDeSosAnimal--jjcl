@@ -18,7 +18,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         public string telefone;
 
         //cadastro completo
-        public Usuarios(string nome, string cpf, string email, string senha, string telefone)
+        public Usuarios(string nome, string email, string senha,string cpf, string telefone)
         {
             this.id = id;
             this.nome = nome;
@@ -31,12 +31,12 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
 
         }
-        //cadastro rapido
-        public Usuarios (string nome, string cpf, string telefone)
+        
+        public Usuarios (string nome, string cpf, string senha)
         {
             this.nome = nome;
             this.cpf = cpf;
-            this.telefone = telefone;
+            this.senha = senha;
         }
 
         public List<Usuarios> busca_todos()
@@ -58,23 +58,23 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
             int id = int.Parse(linha["id"].ToString());
             string nome = linha["nome"].ToString();
-            string cpf = (linha["cpf"].ToString());
             string email = linha["email"].ToString();
             string senha = linha["senha"].ToString();
+            string cpf = (linha["cpf"].ToString());
             string telefone = linha["telefone"].ToString();
 
-            Usuarios usuarios = new Usuarios( nome, cpf, email, senha, telefone);
+            Usuarios usuarios = new Usuarios( nome, email, senha,cpf, telefone);
             return usuarios;
         }
 
         public void Insere_completo(Usuarios usuarios)
         {
-            string query = $"insert into usuarios (nome, cpf, email, senha, telefone) values ('{usuarios.nome}', {usuarios.cpf}, '{usuarios.email}', '{usuarios.senha}', '{usuarios.telefone}' );";
+            string query = $"insert into usuarios (nome, email, senha, cpf, telefone) values ('{usuarios.nome}', '{usuarios.email}', '{usuarios.senha}', '{usuarios.cpf}', '{usuarios.telefone}' );";
             Conexao.executaquery(query);
         }
         public void Insere_rapido(Usuarios usuarios)
         {
-            string query = $"insert into usuarios (nome, cpf, telefone) values ('{usuarios.nome}', {usuarios.cpf}, '{usuarios.telefone}' );";
+            string query = $"insert into usuarios (nome, cpf, senha) values ('{usuarios.nome}', {usuarios.cpf}, '{usuarios.senha}' );";
             Conexao.executaquery(query);
         }
         public Usuarios verifica_nome(string nome)

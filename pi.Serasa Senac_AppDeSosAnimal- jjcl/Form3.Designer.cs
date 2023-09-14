@@ -120,13 +120,13 @@
             // 
             // TXTnome
             // 
-            TXTnome.BackColor = SystemColors.InfoText;
+            TXTnome.BackColor = SystemColors.Desktop;
             TXTnome.BorderColor = Color.FromArgb(72, 116, 245);
             TXTnome.BorderFocusColor = Color.DeepSkyBlue;
             TXTnome.BorderRadius = 20;
             TXTnome.BorderSize = 2;
             TXTnome.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            TXTnome.ForeColor = Color.FromArgb(64, 64, 64);
+            TXTnome.ForeColor = Color.Transparent;
             TXTnome.Location = new Point(753, 447);
             TXTnome.Margin = new Padding(4);
             TXTnome.Multiline = false;
@@ -161,13 +161,13 @@
             TXTsenha.BorderRadius = 20;
             TXTsenha.BorderSize = 2;
             TXTsenha.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            TXTsenha.ForeColor = Color.FromArgb(64, 64, 64);
+            TXTsenha.ForeColor = Color.White;
             TXTsenha.Location = new Point(753, 536);
             TXTsenha.Margin = new Padding(4);
             TXTsenha.Multiline = false;
             TXTsenha.Name = "TXTsenha";
             TXTsenha.Padding = new Padding(10, 7, 10, 7);
-            TXTsenha.PasswordChar = false;
+            TXTsenha.PasswordChar = true;
             TXTsenha.PlaceholderColor = Color.DarkGray;
             TXTsenha.PlaceholderText = "";
             TXTsenha.Size = new Size(563, 29);

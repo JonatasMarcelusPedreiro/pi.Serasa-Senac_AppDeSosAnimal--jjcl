@@ -35,7 +35,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             string telefone = txtcdcompletotel.Texts;
             string email = txtcdcompletoemail.Texts;
             string senha = txtcdcompletosenha.Texts;
-            
+
 
 
             if (nome == "" || cpf == "" || telefone == "" || email == "" || senha == "")
@@ -53,7 +53,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                     MessageBox.Show("CPF invalido");
                     return;
                 }
-                Usuarios usuarios = new Usuarios(nome, cpf, telefone, email, senha);
+                Usuarios usuarios = new Usuarios(nome, email, senha, cpf, telefone);
 
 
                 usuarios.Insere_completo(usuarios);
@@ -69,7 +69,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 return;
             }
 
-            
+
         }
 
         private void Painel_Paint_1(object sender, PaintEventArgs e)

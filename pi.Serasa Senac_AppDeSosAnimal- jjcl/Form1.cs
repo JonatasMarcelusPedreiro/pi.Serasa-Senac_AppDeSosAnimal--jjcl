@@ -23,7 +23,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
             this.WindowState = FormWindowState.Maximized;
         }
 
@@ -32,12 +32,12 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
             string nome = txtnome.Texts;
             string cpf = txtcpf.Texts;
-            string tel = txttelefone.Texts;
+            string senha = txttelefone.Texts;
 
 
 
 
-            if (nome == "" || cpf == "" || tel == "")
+            if (nome == "" || cpf == "" || senha == "")
             {
 
                 MessageBox.Show("Preencha todos os campos acima.");
@@ -46,10 +46,10 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             }
             else
             {
-                
-                
-                Usuarios usuarios = new Usuarios(nome, cpf, tel);
-                
+
+
+                Usuarios usuarios = new Usuarios(nome, cpf, senha);
+
 
                 usuarios.Insere_rapido(usuarios);
                 // Todos os campos estão preenchidos, então abra a Form4
@@ -83,8 +83,8 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
-            
+
+
             Form7 tela = new Form7();
             tela.Show();
         }
@@ -115,10 +115,10 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
             string nome = txtnome.Texts;
             string cpf = txtcpf.Texts;
-            string tel = txttelefone.Texts;
+            string senha = txttelefone.Texts;
 
 
-            if (nome == "" || cpf == "" || tel == "")
+            if (nome == "" || cpf == "" || senha == "")
             {
 
                 MessageBox.Show("Preencha todos os campos acima.");
@@ -128,15 +128,10 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             u = u.verifica_nome(nome);
             if (u == null)
             {
-                Usuarios usuarios = new Usuarios(nome, cpf, tel);
-
-
+                Usuarios usuarios = new Usuarios(nome, cpf, senha);
                 usuarios.Insere_rapido(usuarios);
-                // Todos os campos estão preenchidos, então abra a Form4
                 Form3 tela = new Form3();
                 tela.Show();
-
-
             }
             else
             {

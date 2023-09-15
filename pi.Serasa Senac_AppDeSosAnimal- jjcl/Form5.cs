@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,57 +31,55 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void btncadastrarfuncionarios_Click(object sender, EventArgs e)
         {
-            string animal = txtAnimal.Text;
-            string situacao = txtSITUACAO.Text;
-            string sexo = txtsexoanimal.Text;
-            int id = 0;
 
-            if (animal == "" && situacao == "" && sexo == "")
-            {
-                MessageBox.Show("Preencha todos os campos");
-            }
-            else
-            {
-                Animais animais = new Animais(id, animal, situacao, sexo);
-                animais.Insere(animais);
-                txtAnimal.Clear();
-                txtsexoanimal.Clear();
-                txtSITUACAO.Clear();
-            }
         }
 
         private void btnImagem_Click(object sender, EventArgs e)
         {
-            InfoAnimais novoForm = new InfoAnimais();
-
-            // Crie um PictureBox e um Label
-            PictureBox pictureBox = new PictureBox();
-            Label label = new Label();
-
-            // Configure propriedades do PictureBox
-
 
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads";
-                openFileDialog.Filter = "Arquivos de Imagem|.jpg;.jpeg;.png;.gif;.bmp|Todos os Arquivos|.*";
 
+                openFileDialog.Filter = "Imagens|*.jpg;*.jpeg;*.png;*.jpg_large";
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string caminhoDaImagem = openFileDialog.FileName;
-                    //pbInfoAnimais = Image.FromFile(caminhoDaImagem);
+                    string imagePath = openFileDialog.FileName;
+                    byte[] imageBytes = File.ReadAllBytes(imagePath);
+                    try
+                    {
+                      
+                        string animal = txtAnimal.Text;
+                        string situacao = txtSITUACAO.Text;
+                        string sexo = txtsexoanimal.Text;
+                        int id = 0;
+                        string imagem = "";
+
+                        string imagemBase64 = Convert.ToBase64String(imageBytes);
+
+                        Animais animais = new Animais(id, animal, situacao, sexo, imagemBase64);
+                        animais.Insere(animais);
+
+                      //  string sql = $"insert into animais (animal, situacao, sexo, imagem) values ('{animais.animal}', '{animais.situacao}', '{animais.sexo}', '@imagem' );";
+
+                        txtAnimal.Clear();
+                        txtsexoanimal.Clear();
+                        txtSITUACAO.Clear();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao inserir imagem: " + ex.Message);
+                    }
                 }
+                
 
-                pictureBox.Location = new Point(20, 20);
-                pictureBox.Size = new Size(200, 200);
-
-                // Configure propriedades do Label
-                label.Location = new Point(20, 230);
-                label.Text = "Texto do Label";
-
-                // Adicione o PictureBox e o Label ao novo formulário
-                novoForm.Controls.Add(pictureBox);
-                novoForm.Controls.Add(label);
+                /*if (animal == "" && situacao == "" && sexo == "")
+                {
+                    MessageBox.Show("Preencha todos os campos");
+                }
+                else
+                {
+                    
+                }*/
             }
         }
 

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,15 +15,25 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         public string animal;
         public string situacao;
         public string sexo;
-        
+        public string imagem;
 
-        public Animais(int id, string animal, string situacao, string sexo)
+       /* public Animais(int id, string animal, string situacao, string sexo)
         {
             this.id = id;
             this.animal = animal;
             this.situacao = situacao;
             this.sexo = sexo;
             
+        }*/
+
+        public Animais(int id, string animal, string situacao, string sexo, string imagem)
+        {
+            this.id = id;
+            this.animal = animal;
+            this.situacao = situacao;
+            this.sexo = sexo;
+            this.imagem = imagem;
+
         }
         public Animais()
         {
@@ -44,21 +55,23 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             return animal;
         }
 
+
         public Animais carrega_dados(DataRow linha)
         {
             int id = int.Parse(linha["id"].ToString());
             string animal = linha["animal"].ToString();
             string situacao = linha["situacao"].ToString();
             string sexo = linha["sexo"].ToString();
+            string imagem = linha["imagem"].ToString();
             
 
-            Animais animais = new Animais(id, animal, situacao, sexo);
+            Animais animais = new Animais(id, animal, situacao, sexo, imagem);
             return animais;
         }
 
         public void Insere(Animais animais)
         {
-            string query = $"insert into animais (animal, situacao, sexo) values ('{animais.animal}', '{animais.situacao}', '{animais.sexo}' );";
+            string query = $"insert into animais (animal, situacao, sexo, imagem) values ('{animais.animal}', '{animais.situacao}', '{animais.sexo}', '{animais.imagem}' );";
             Conexao.executaquery(query);
         }
 

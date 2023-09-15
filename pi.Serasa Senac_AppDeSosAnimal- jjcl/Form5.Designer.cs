@@ -35,7 +35,6 @@
             lblnome = new Label();
             txtsexoanimal = new TextBox();
             txtSITUACAO = new TextBox();
-            btncadastrarfuncionarios = new Button();
             txtAnimal = new TextBox();
             lblcadastroanimais = new Label();
             openFileDialog1 = new OpenFileDialog();
@@ -51,7 +50,6 @@
             panel1.Controls.Add(lblnome);
             panel1.Controls.Add(txtsexoanimal);
             panel1.Controls.Add(txtSITUACAO);
-            panel1.Controls.Add(btncadastrarfuncionarios);
             panel1.Controls.Add(txtAnimal);
             panel1.Location = new Point(240, 77);
             panel1.Name = "panel1";
@@ -60,11 +58,12 @@
             // 
             // btnImagem
             // 
-            btnImagem.Location = new Point(54, 190);
+            btnImagem.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnImagem.Location = new Point(95, 193);
             btnImagem.Name = "btnImagem";
-            btnImagem.Size = new Size(75, 23);
+            btnImagem.Size = new Size(136, 30);
             btnImagem.TabIndex = 7;
-            btnImagem.Text = "Imagem";
+            btnImagem.Text = "Salvar ";
             btnImagem.UseVisualStyleBackColor = true;
             btnImagem.Click += btnImagem_Click;
             // 
@@ -111,16 +110,6 @@
             txtSITUACAO.Name = "txtSITUACAO";
             txtSITUACAO.Size = new Size(201, 23);
             txtSITUACAO.TabIndex = 2;
-            // 
-            // btncadastrarfuncionarios
-            // 
-            btncadastrarfuncionarios.Location = new Point(181, 190);
-            btncadastrarfuncionarios.Name = "btncadastrarfuncionarios";
-            btncadastrarfuncionarios.Size = new Size(75, 23);
-            btncadastrarfuncionarios.TabIndex = 1;
-            btncadastrarfuncionarios.Text = "Cadastrar";
-            btncadastrarfuncionarios.UseVisualStyleBackColor = true;
-            btncadastrarfuncionarios.Click += btncadastrarfuncionarios_Click;
             // 
             // txtAnimal
             // 
@@ -169,7 +158,6 @@
         private Label lblnome;
         private TextBox txtsexoanimal;
         private TextBox txtSITUACAO;
-        private Button btncadastrarfuncionarios;
         private TextBox txtAnimal;
         private Label lblcadastroanimais;
         private Button btnImagem;

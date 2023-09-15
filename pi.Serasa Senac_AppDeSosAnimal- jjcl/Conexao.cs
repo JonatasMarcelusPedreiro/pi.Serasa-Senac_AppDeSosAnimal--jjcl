@@ -10,16 +10,20 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 {
     internal class Conexao
     {
-        string teste;
-        const string host = "192.168.0.16"; //10.60.45.22
-        const string banco = "trabalho_final";
-        const string usuario = "senac";
-        const string senha = "senac";
+        
+        const string host = "srv793.hstgr.io"; //192.168.0.16
+        const string banco = "u647084545_serasa_ljjc";
+        const string usuario = "u647084545_serasa_ljjc";
+        const string senha = "Serasa2023";
         const string dados_conexao = $"Server={host};Database={banco};Uid={usuario};Pwd={senha};";
         static MySqlConnection conexao = new MySqlConnection(dados_conexao);
 
 
-       
+       public static void salva_imagem()
+        {
+            conexao.Open();
+            
+        }
         
      
 

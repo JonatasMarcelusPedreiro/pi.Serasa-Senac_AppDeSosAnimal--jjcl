@@ -47,6 +47,7 @@
             fontInstaller1 = new WiLBiT.FontInstaller(components);
             fontsInstaller1 = new WK.Libraries.FontsInstallerNS.FontsInstaller(components);
             fontInstaller2 = new WiLBiT.FontInstaller(components);
+            label7 = new Label();
             Painel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -58,6 +59,7 @@
             Painel.BorderColor = Color.Transparent;
             Painel.BorderRadius = 0;
             Painel.BorderSize = 0;
+            Painel.Controls.Add(label7);
             Painel.Controls.Add(btnlogin);
             Painel.Controls.Add(btncadastrocompleto);
             Painel.Controls.Add(label6);
@@ -303,6 +305,17 @@
             fontsInstaller1.ParentForm = this;
             fontsInstaller1.TestingMode = false;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.ForeColor = Color.GhostWhite;
+            label7.Location = new Point(1083, 459);
+            label7.Name = "label7";
+            label7.Size = new Size(100, 15);
+            label7.TabIndex = 13;
+            label7.Text = "EX : 11 NUMEROS";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -337,5 +350,6 @@
         private WK.Libraries.FontsInstallerNS.FontsInstaller fontsInstaller1;
         private WiLBiT.FontInstaller fontInstaller2;
         private WiLBiT.WiLBiTButton btnlogin;
+        private Label label7;
     }
 }

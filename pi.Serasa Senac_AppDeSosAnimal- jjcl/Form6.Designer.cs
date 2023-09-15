@@ -42,6 +42,7 @@
             label4 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            label7 = new Label();
             Painelcadastrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -53,6 +54,7 @@
             Painelcadastrar.BorderColor = Color.PaleVioletRed;
             Painelcadastrar.BorderRadius = 6;
             Painelcadastrar.BorderSize = 0;
+            Painelcadastrar.Controls.Add(label7);
             Painelcadastrar.Controls.Add(btncdcompleto);
             Painelcadastrar.Controls.Add(label3);
             Painelcadastrar.Controls.Add(label2);
@@ -287,6 +289,17 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.ForeColor = Color.GhostWhite;
+            label7.Location = new Point(1187, 470);
+            label7.Name = "label7";
+            label7.Size = new Size(100, 15);
+            label7.TabIndex = 22;
+            label7.Text = "EX : 11 NUMEROS";
+            // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -317,5 +330,6 @@
         private Label label1;
         private PictureBox pictureBox1;
         private WiLBiT.WiLBiTButton btncdcompleto;
+        private Label label7;
     }
 }

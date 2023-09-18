@@ -106,7 +106,7 @@
             btnlogin.Location = new Point(1105, 647);
             btnlogin.Name = "btnlogin";
             btnlogin.Size = new Size(134, 22);
-            btnlogin.TabIndex = 12;
+            btnlogin.TabIndex = 5;
             btnlogin.Text = "LOGIN";
             btnlogin.UseVisualStyleBackColor = false;
             btnlogin.Click += btnlogin_Click_1;
@@ -124,7 +124,7 @@
             btncadastrocompleto.Location = new Point(739, 647);
             btncadastrocompleto.Name = "btncadastrocompleto";
             btncadastrocompleto.Size = new Size(144, 22);
-            btncadastrocompleto.TabIndex = 11;
+            btncadastrocompleto.TabIndex = 4;
             btncadastrocompleto.Text = "CADASTRO COMPLETO";
             btncadastrocompleto.UseVisualStyleBackColor = false;
             btncadastrocompleto.Click += btncadastrocompleto_Click_1;
@@ -219,7 +219,7 @@
             txtnome.PlaceholderColor = Color.DarkGray;
             txtnome.PlaceholderText = "";
             txtnome.Size = new Size(460, 29);
-            txtnome.TabIndex = 2;
+            txtnome.TabIndex = 0;
             txtnome.Texts = "";
             txtnome.UnderlinedStyle = false;
             // 
@@ -294,7 +294,7 @@
             txttelefone.PlaceholderColor = Color.DarkGray;
             txttelefone.PlaceholderText = "";
             txttelefone.Size = new Size(460, 29);
-            txttelefone.TabIndex = 0;
+            txttelefone.TabIndex = 2;
             txttelefone.Texts = "";
             txttelefone.UnderlinedStyle = false;
             // 

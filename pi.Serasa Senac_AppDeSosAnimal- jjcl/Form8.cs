@@ -24,7 +24,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void Form8_Load(object sender, EventArgs e)
         {
-            carregainfos();
+
         }
 
         void carregainfos()
@@ -60,8 +60,20 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 byte[] imageBytes = Convert.FromBase64String(animal.imagem);
                 using (var ms = new System.IO.MemoryStream(imageBytes))
                 {
-                    Image imagem = Image.FromStream(ms);
-                    pic.Image = imagem;
+                    Image originalImage = Image.FromStream(ms);
+
+                    // Defina as dimensões desejadas para a imagem redimensionada
+                    int novaLargura = 300;
+                    int novaAltura = 200;
+
+                    // Redimensione a imagem para se ajustar às dimensões desejadas
+                    Image imagemRedimensionada = RedimensionarImagem(originalImage, novaLargura, novaAltura);
+
+                    // Atribua a imagem redimensionada ao controle PictureBox
+                    pic.Image = imagemRedimensionada;
+
+                    // Defina o tamanho do PictureBox
+                    pic.Size = new Size(novaLargura, novaAltura);
                 }
             }
             catch (Exception ex)
@@ -69,7 +81,18 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 MessageBox.Show("Erro ao carregar a imagem: " + ex.Message);
             }
 
-            pic.Size = new Size(300, 200);
+            
+             Image RedimensionarImagem(Image imagemOriginal, int largura, int altura)
+            {
+                Bitmap imagemRedimensionada = new Bitmap(largura, altura);
+                using (Graphics g = Graphics.FromImage(imagemRedimensionada))
+                {
+                    g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                    g.DrawImage(imagemOriginal, 0, 0, largura, altura);
+                }
+                return imagemRedimensionada;
+            }
+
 
 
             Label label = new Label();
@@ -103,7 +126,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             painelANIMAL.Controls.Add(label3);
             pic.Location = new Point(Ximagem, Yimagem);
             Xsitu = Xsitu + 300;
-            Ximagem = Ximagem + 300;
+            Ximagem = Ximagem + 350;
             Xnome = Xnome + 300;
             Xsexo = Xsexo + 300;
             quebraLinha++;
@@ -156,9 +179,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
-            this.Close();
+           
         }
 
         private void painelANIMAL_Paint(object sender, PaintEventArgs e)
@@ -174,6 +195,14 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void Form8_Load_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            carregainfos();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+            this.Close();
         }
     }
 }

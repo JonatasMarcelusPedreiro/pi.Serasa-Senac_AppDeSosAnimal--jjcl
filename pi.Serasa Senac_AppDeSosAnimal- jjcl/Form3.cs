@@ -20,6 +20,26 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void btnlogin_Click(object sender, EventArgs e)
         {
 
+            
+        }
+
+        private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            Painel3.Location = new Point(ClientSize.Width / 2 - Painel3.Size.Width / 2, ClientSize.Height / 2 - Painel3.Size.Height / 2);
+
+            Painel3.Dock = DockStyle.Fill;
+            this.WindowState = FormWindowState.Maximized;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form1 tela = new Form1();
+            tela.Show();
+        }
+
+        private void btnlogin_Click_1(object sender, EventArgs e)
+        {
             string nome = TXTnome.Texts;
             string senha = TXTsenha.Texts;
 
@@ -37,21 +57,6 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             }
             this.Close();
             Form4 tela = new Form4();
-            tela.Show();
-        }
-
-        private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-            Painel3.Location = new Point(ClientSize.Width / 2 - Painel3.Size.Width / 2, ClientSize.Height / 2 - Painel3.Size.Height / 2);
-
-            Painel3.Dock = DockStyle.Fill;
-            this.WindowState = FormWindowState.Maximized;
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Form1 tela = new Form1();
             tela.Show();
         }
     }

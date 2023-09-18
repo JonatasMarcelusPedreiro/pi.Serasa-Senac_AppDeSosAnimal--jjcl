@@ -37,16 +37,16 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         }
         public void btnAbrirWhatsApp_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         public void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+
         }
         public void AbrirLink(string link)
         {
-          
+
         }
 
         private void wilBitButton1_Click(object sender, EventArgs e)

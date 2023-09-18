@@ -30,6 +30,26 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void btncdcompleto_Click(object sender, EventArgs e)
         {
 
+            
+        }
+
+        private void Painel_Paint_1(object sender, PaintEventArgs e)
+        {
+            Painelcadastrar.Location = new Point((Painelcadastrar.ClientSize.Width - Painelcadastrar.Width) / 2, (Painelcadastrar.ClientSize.Height - Painelcadastrar.Height) / 2);
+
+            Painelcadastrar.Dock = DockStyle.Fill;
+            this.WindowState = FormWindowState.Maximized;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form1 tela = new Form1();
+            tela.Show();
+        }
+
+        private void btncdcompleto_Click_1(object sender, EventArgs e)
+        {
             string nome = txtcdcompletonome.Texts;
             string cpf = txtcdcompletocpf.Texts;
             string telefone = txtcdcompletotel.Texts;
@@ -70,27 +90,12 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             }
 
             // Se nenhum dos casos acima for verdadeiro, você pode inserir o novo registro
-            
+
             Usuarios usuarios = new Usuarios(nome, email, senha, cpf, telefone);
             usuarios.Insere_completo(usuarios);
             Form3 tela = new Form3();
             tela.Show();
             this.Close();
-        }
-
-        private void Painel_Paint_1(object sender, PaintEventArgs e)
-        {
-            Painelcadastrar.Location = new Point((Painelcadastrar.ClientSize.Width - Painelcadastrar.Width) / 2, (Painelcadastrar.ClientSize.Height - Painelcadastrar.Height) / 2);
-
-            Painelcadastrar.Dock = DockStyle.Fill;
-            this.WindowState = FormWindowState.Maximized;
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Form1 tela = new Form1();
-            tela.Show();
         }
     }
 }

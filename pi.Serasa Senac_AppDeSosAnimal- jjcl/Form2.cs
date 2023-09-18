@@ -45,7 +45,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void btncadastrarfuncionarios_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btncadastrarfuncionarios_Click_1(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 MessageBox.Show("Preencha todos os campos!!");
                 return;
             }
-            
+
             Usuarios u = new Usuarios();
             u = u.verifica_nome(nome);
             if (u == null)
@@ -78,12 +78,12 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 MessageBox.Show("Nome não permitido");
                 return;
             }
-           
-               
 
 
 
-            
+
+
+
         }
     }
 }

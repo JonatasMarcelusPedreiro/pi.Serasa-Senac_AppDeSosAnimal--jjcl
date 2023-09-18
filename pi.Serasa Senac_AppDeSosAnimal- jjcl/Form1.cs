@@ -85,8 +85,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
 
 
-            Form7 tela = new Form7();
-            tela.Show();
+            
         }
 
         private void Painel_Paint(object sender, PaintEventArgs e)
@@ -101,8 +100,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void btncadastrocompleto_Click_1(object sender, EventArgs e)
         {
-            Form6 tela = new Form6();
-            tela.Show();
+
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
@@ -113,6 +111,29 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void cadastrorapido_Click(object sender, EventArgs e)
         {
 
+
+
+        }
+
+        private void btnlogin_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Painel_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnlogin_Click_2(object sender, EventArgs e)
+        {
+            Form3 tela = new Form3();
+            tela.Show();
+
+        }
+
+        private void cadastrorapido_Click_1(object sender, EventArgs e)
+        {
             string nome = txtnome.Texts;
             string cpf = txtcpf.Texts;
             string senha = txttelefone.Texts;
@@ -154,19 +175,18 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             usuarios.Insere_rapido(usuarios);
             Form3 tela = new Form3();
             tela.Show();
-
         }
 
-        private void btnlogin_Click_1(object sender, EventArgs e)
+        private void btncadastrocompleto_Click_2(object sender, EventArgs e)
         {
-            Form3 tela = new Form3();
+            Form6 tela = new Form6();
             tela.Show();
-
         }
 
-        private void Painel_Paint_1(object sender, PaintEventArgs e)
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-
+            Form7 tela = new Form7();
+            tela.Show();
         }
     }
 

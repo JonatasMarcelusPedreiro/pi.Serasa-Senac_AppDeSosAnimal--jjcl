@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -55,6 +56,22 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             string telefone = txtcdcompletotel.Texts;
             string email = txtcdcompletoemail.Texts;
             string senha = txtcdcompletosenha.Texts;
+
+            string verificaemail = txtcdcompletoemail.Texts;
+
+            // Use uma expressão regular para validar o endereço de e-mail
+            string pattern = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
+            Regex regex = new Regex(pattern);
+
+            if (regex.IsMatch(verificaemail))
+            {
+                
+            }
+            else
+            {
+                MessageBox.Show("Endereço de e-mail inválido");
+                return;
+            }
 
 
 

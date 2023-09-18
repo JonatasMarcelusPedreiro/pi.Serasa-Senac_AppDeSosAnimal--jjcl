@@ -112,7 +112,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void cadastrorapido_Click(object sender, EventArgs e)
         {
-                
+
             string nome = txtnome.Texts;
             string cpf = txtcpf.Texts;
             string senha = txttelefone.Texts;

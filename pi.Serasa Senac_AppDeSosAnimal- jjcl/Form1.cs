@@ -163,6 +163,11 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             tela.Show();
 
         }
+
+        private void Painel_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }

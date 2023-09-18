@@ -160,5 +160,20 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             form4.Show();
             this.Close();
         }
+
+        private void painelANIMAL_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form8_Load_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }

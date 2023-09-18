@@ -55,7 +55,7 @@
             painelANIMAL.AutoScroll = true;
             painelANIMAL.Location = new Point(3, 154);
             painelANIMAL.Name = "painelANIMAL";
-            painelANIMAL.Size = new Size(1909, 602);
+            painelANIMAL.Size = new Size(1909, 941);
             painelANIMAL.TabIndex = 8;
             painelANIMAL.Paint += painelANIMAL_Paint;
             // 

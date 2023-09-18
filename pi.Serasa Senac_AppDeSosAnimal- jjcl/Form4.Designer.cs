@@ -63,7 +63,7 @@
             Painel.ForeColor = Color.DarkOrchid;
             Painel.Location = new Point(0, 0);
             Painel.Name = "Painel";
-            Painel.Size = new Size(1370, 749);
+            Painel.Size = new Size(1904, 1041);
             Painel.TabIndex = 5;
             // 
             // label4
@@ -200,10 +200,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 749);
+            ClientSize = new Size(1904, 1041);
             Controls.Add(Painel);
             Name = "Form4";
             Text = "Form4";
+            Load += Form4_Load;
             Painel.ResumeLayout(false);
             Painel.PerformLayout();
             wilBitGradientPanel1.ResumeLayout(false);

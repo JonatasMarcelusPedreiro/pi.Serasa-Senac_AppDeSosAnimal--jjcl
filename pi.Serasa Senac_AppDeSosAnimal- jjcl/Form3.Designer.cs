@@ -60,7 +60,7 @@
             Painel3.ForeColor = Color.DarkOrchid;
             Painel3.Location = new Point(0, 0);
             Painel3.Name = "Painel3";
-            Painel3.Size = new Size(1370, 749);
+            Painel3.Size = new Size(1904, 1041);
             Painel3.TabIndex = 5;
             // 
             // btnlogin
@@ -136,7 +136,7 @@
             TXTnome.PlaceholderText = "";
             TXTnome.Size = new Size(567, 29);
             TXTnome.TabIndex = 0;
-            TXTnome.Texts = "leo";
+            TXTnome.Texts = "";
             TXTnome.UnderlinedStyle = false;
             // 
             // pictureBox1
@@ -170,18 +170,19 @@
             TXTsenha.PlaceholderText = "";
             TXTsenha.Size = new Size(563, 29);
             TXTsenha.TabIndex = 1;
-            TXTsenha.Texts = "leo";
+            TXTsenha.Texts = "";
             TXTsenha.UnderlinedStyle = false;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 749);
+            ClientSize = new Size(1904, 1041);
             Controls.Add(Painel3);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form3";
             Text = "Form3";
+            Load += Form3_Load;
             Painel3.ResumeLayout(false);
             Painel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

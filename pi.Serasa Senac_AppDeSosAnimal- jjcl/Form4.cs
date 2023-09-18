@@ -77,6 +77,11 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
 
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+        }
     }
 
 }

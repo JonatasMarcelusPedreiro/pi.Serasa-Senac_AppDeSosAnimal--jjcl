@@ -14,6 +14,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void Form1_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
+            Painel.Location = new Point((Painel.ClientSize.Width - Painel.Width) / 2, (Painel.ClientSize.Height - Painel.Height) / 2);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -85,7 +86,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
 
 
-            
+
         }
 
         private void Painel_Paint(object sender, PaintEventArgs e)

@@ -78,7 +78,7 @@
             Painel.Location = new Point(0, 0);
             Painel.Name = "Painel";
             Painel.RightToLeft = RightToLeft.No;
-            Painel.Size = new Size(1370, 749);
+            Painel.Size = new Size(1904, 1041);
             Painel.TabIndex = 4;
             Painel.Paint += Painel_Paint_1;
             // 
@@ -320,11 +320,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 749);
+            ClientSize = new Size(1904, 1041);
             Controls.Add(Painel);
             Name = "Form1";
             RightToLeft = RightToLeft.No;
             Text = "Form1";
+            Load += Form1_Load;
             Painel.ResumeLayout(false);
             Painel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

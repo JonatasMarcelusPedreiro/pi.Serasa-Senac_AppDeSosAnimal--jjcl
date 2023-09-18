@@ -81,8 +81,8 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 MessageBox.Show("Erro ao carregar a imagem: " + ex.Message);
             }
 
-            
-             Image RedimensionarImagem(Image imagemOriginal, int largura, int altura)
+
+            Image RedimensionarImagem(Image imagemOriginal, int largura, int altura)
             {
                 Bitmap imagemRedimensionada = new Bitmap(largura, altura);
                 using (Graphics g = Graphics.FromImage(imagemRedimensionada))
@@ -131,7 +131,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             Xsexo = Xsexo + 350;
             quebraLinha++;
 
-            if (quebraLinha == 4)
+            if (quebraLinha == 5)
             {
                 Ximagem = 10;
                 Yimagem = Yimagem + 350;
@@ -142,7 +142,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 Xsexo = 10;
                 Ysexo = Ysexo + 350;
             }
-            if (quebraLinha == 8)
+            if (quebraLinha == 10)
             {
                 Ximagem = 10;
                 Yimagem = Yimagem + 350;
@@ -153,7 +153,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 Xsexo = 10;
                 Ysexo = Ysexo + 350;
             }
-            if (quebraLinha == 12)
+            if (quebraLinha == 15)
             {
                 Ximagem = 10;
                 Yimagem = Yimagem + 350;
@@ -164,7 +164,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 Xsexo = 10;
                 Ysexo = Ysexo + 350;
             }
-            if (quebraLinha == 14)
+            if (quebraLinha == 20)
             {
                 Ximagem = 10;
                 Yimagem = Yimagem + 350;
@@ -179,7 +179,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void painelANIMAL_Paint(object sender, PaintEventArgs e)

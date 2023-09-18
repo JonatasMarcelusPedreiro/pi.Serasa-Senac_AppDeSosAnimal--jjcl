@@ -65,7 +65,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
             if (regex.IsMatch(verificaemail))
             {
-                
+
             }
             else
             {
@@ -113,6 +113,11 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             Form3 tela = new Form3();
             tela.Show();
             this.Close();
+        }
+
+        private void Form6_Load_1(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
         }
     }
 }

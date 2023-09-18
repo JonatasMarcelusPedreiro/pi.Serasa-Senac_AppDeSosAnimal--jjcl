@@ -73,7 +73,7 @@
             Painelcadastrar.Location = new Point(0, 0);
             Painelcadastrar.Name = "Painelcadastrar";
             Painelcadastrar.RightToLeft = RightToLeft.No;
-            Painelcadastrar.Size = new Size(1370, 749);
+            Painelcadastrar.Size = new Size(1904, 1041);
             Painelcadastrar.TabIndex = 5;
             // 
             // label7
@@ -302,10 +302,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 749);
+            ClientSize = new Size(1904, 1041);
             Controls.Add(Painelcadastrar);
             Name = "Form6";
             Text = "Form6";
+            Load += Form6_Load_1;
             Painelcadastrar.ResumeLayout(false);
             Painelcadastrar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -20,7 +20,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         private void btnlogin_Click(object sender, EventArgs e)
         {
 
-            
+
         }
 
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
@@ -58,6 +58,11 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             this.Close();
             Form4 tela = new Form4();
             tela.Show();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
         }
     }
 }

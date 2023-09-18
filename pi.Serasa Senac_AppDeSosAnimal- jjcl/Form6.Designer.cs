@@ -100,7 +100,7 @@
             btncdcompleto.Location = new Point(932, 659);
             btncdcompleto.Name = "btncdcompleto";
             btncdcompleto.Size = new Size(225, 42);
-            btncdcompleto.TabIndex = 21;
+            btncdcompleto.TabIndex = 5;
             btncdcompleto.Text = "CADASTRAR";
             btncdcompleto.UseVisualStyleBackColor = false;
             btncdcompleto.Click += btncdcompleto_Click_1;
@@ -147,7 +147,7 @@
             txtcdcompletocpf.PlaceholderColor = Color.DarkGray;
             txtcdcompletocpf.PlaceholderText = "";
             txtcdcompletocpf.Size = new Size(512, 29);
-            txtcdcompletocpf.TabIndex = 17;
+            txtcdcompletocpf.TabIndex = 3;
             txtcdcompletocpf.Texts = "";
             txtcdcompletocpf.UnderlinedStyle = false;
             // 
@@ -169,7 +169,7 @@
             txtcdcompletotel.PlaceholderColor = Color.DarkGray;
             txtcdcompletotel.PlaceholderText = "";
             txtcdcompletotel.Size = new Size(512, 29);
-            txtcdcompletotel.TabIndex = 16;
+            txtcdcompletotel.TabIndex = 4;
             txtcdcompletotel.Texts = "";
             txtcdcompletotel.UnderlinedStyle = false;
             // 
@@ -191,7 +191,7 @@
             txtcdcompletoemail.PlaceholderColor = Color.DarkGray;
             txtcdcompletoemail.PlaceholderText = "";
             txtcdcompletoemail.Size = new Size(512, 29);
-            txtcdcompletoemail.TabIndex = 15;
+            txtcdcompletoemail.TabIndex = 1;
             txtcdcompletoemail.Texts = "";
             txtcdcompletoemail.UnderlinedStyle = false;
             // 
@@ -213,7 +213,7 @@
             txtcdcompletosenha.PlaceholderColor = Color.DarkGray;
             txtcdcompletosenha.PlaceholderText = "";
             txtcdcompletosenha.Size = new Size(512, 29);
-            txtcdcompletosenha.TabIndex = 14;
+            txtcdcompletosenha.TabIndex = 2;
             txtcdcompletosenha.Texts = "";
             txtcdcompletosenha.UnderlinedStyle = false;
             // 
@@ -235,7 +235,7 @@
             txtcdcompletonome.PlaceholderColor = Color.DarkGray;
             txtcdcompletonome.PlaceholderText = "";
             txtcdcompletonome.Size = new Size(512, 29);
-            txtcdcompletonome.TabIndex = 13;
+            txtcdcompletonome.TabIndex = 0;
             txtcdcompletonome.Texts = "";
             txtcdcompletonome.UnderlinedStyle = false;
             // 

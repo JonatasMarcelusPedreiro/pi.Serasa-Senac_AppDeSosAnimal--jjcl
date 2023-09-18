@@ -40,13 +40,13 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             }
         }
 
-        int Ximagem = 100;
+        int Ximagem = 10;
         int Yimagem = 0;
-        int Xnome = 100;
+        int Xnome = 10;
         int Ynome = 200;
-        int Xsitu = 100;
+        int Xsitu = 10;
         int Ysitu = 240;
-        int Xsexo = 100;
+        int Xsexo = 10;
         int Ysexo = 290;
 
         int quebraLinha;
@@ -125,54 +125,54 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             painelANIMAL.Controls.Add(label2);
             painelANIMAL.Controls.Add(label3);
             pic.Location = new Point(Ximagem, Yimagem);
-            Xsitu = Xsitu + 300;
+            Xsitu = Xsitu + 350;
             Ximagem = Ximagem + 350;
-            Xnome = Xnome + 300;
-            Xsexo = Xsexo + 300;
+            Xnome = Xnome + 350;
+            Xsexo = Xsexo + 350;
             quebraLinha++;
 
             if (quebraLinha == 4)
             {
-                Ximagem = 100;
+                Ximagem = 10;
                 Yimagem = Yimagem + 350;
-                Xnome = 100;
+                Xnome = 10;
                 Ynome = Ynome + 350;
-                Xsitu = 100;
+                Xsitu = 10;
                 Ysitu = Ysitu + 350;
-                Xsexo = 100;
+                Xsexo = 10;
                 Ysexo = Ysexo + 350;
             }
             if (quebraLinha == 8)
             {
-                Ximagem = 100;
+                Ximagem = 10;
                 Yimagem = Yimagem + 350;
-                Xnome = 100;
+                Xnome = 10;
                 Ynome = Ynome + 350;
-                Xsitu = 100;
+                Xsitu = 10;
                 Ysitu = Ysitu + 350;
-                Xsexo = 100;
+                Xsexo = 10;
                 Ysexo = Ysexo + 350;
             }
             if (quebraLinha == 12)
             {
-                Ximagem = 100;
+                Ximagem = 10;
                 Yimagem = Yimagem + 350;
-                Xnome = 100;
+                Xnome = 10;
                 Ynome = Ynome + 350;
-                Xsitu = 100;
+                Xsitu = 10;
                 Ysitu = Ysitu + 350;
-                Xsexo = 100;
+                Xsexo = 10;
                 Ysexo = Ysexo + 350;
             }
             if (quebraLinha == 14)
             {
-                Ximagem = 100;
+                Ximagem = 10;
                 Yimagem = Yimagem + 350;
-                Xnome = 100;
+                Xnome = 10;
                 Ynome = Ynome + 350;
-                Xsitu = 100;
+                Xsitu = 10;
                 Ysitu = Ysitu + 350;
-                Xsexo = 100;
+                Xsexo = 10;
                 Ysexo = Ysexo + 350;
             }
         }

@@ -53,9 +53,9 @@
             // painelANIMAL
             // 
             this.painelANIMAL.AutoScroll = true;
-            this.painelANIMAL.Location = new System.Drawing.Point(3, 162);
+            this.painelANIMAL.Location = new System.Drawing.Point(3, 154);
             this.painelANIMAL.Name = "painelANIMAL";
-            this.painelANIMAL.Size = new System.Drawing.Size(1370, 594);
+            this.painelANIMAL.Size = new System.Drawing.Size(1909, 602);
             this.painelANIMAL.TabIndex = 8;
             this.painelANIMAL.Paint += new System.Windows.Forms.PaintEventHandler(this.painelANIMAL_Paint);
             // 
@@ -102,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.panel1);
             this.Name = "Form8";
             this.Text = "Form8";

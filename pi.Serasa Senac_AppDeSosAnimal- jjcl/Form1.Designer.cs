@@ -78,7 +78,7 @@
             this.Painel.Location = new System.Drawing.Point(0, 0);
             this.Painel.Name = "Painel";
             this.Painel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Painel.Size = new System.Drawing.Size(1370, 749);
+            this.Painel.Size = new System.Drawing.Size(1904, 1041);
             this.Painel.TabIndex = 4;
             this.Painel.Paint += new System.Windows.Forms.PaintEventHandler(this.Painel_Paint_1);
             // 
@@ -318,7 +318,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.Painel);
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;

@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Painel = new WiLBiT.WiLBiTGradientPanel();
+            label7 = new Label();
             btnlogin = new WiLBiT.WiLBiTButton();
             btncadastrocompleto = new WiLBiT.WiLBiTButton();
             label6 = new Label();
@@ -47,7 +48,6 @@
             fontInstaller1 = new WiLBiT.FontInstaller(components);
             fontsInstaller1 = new WK.Libraries.FontsInstallerNS.FontsInstaller(components);
             fontInstaller2 = new WiLBiT.FontInstaller(components);
-            label7 = new Label();
             Painel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -81,6 +81,17 @@
             Painel.Size = new Size(1370, 749);
             Painel.TabIndex = 4;
             Painel.Paint += Painel_Paint;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.ForeColor = Color.GhostWhite;
+            label7.Location = new Point(1083, 459);
+            label7.Name = "label7";
+            label7.Size = new Size(100, 15);
+            label7.TabIndex = 13;
+            label7.Text = "EX : 11 NUMEROS";
             // 
             // btnlogin
             // 
@@ -304,17 +315,6 @@
             fontsInstaller1.FontsListBullet = "+";
             fontsInstaller1.ParentForm = this;
             fontsInstaller1.TestingMode = false;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.ForeColor = Color.GhostWhite;
-            label7.Location = new Point(1083, 459);
-            label7.Name = "label7";
-            label7.Size = new Size(100, 15);
-            label7.TabIndex = 13;
-            label7.Text = "EX : 11 NUMEROS";
             // 
             // Form1
             // 

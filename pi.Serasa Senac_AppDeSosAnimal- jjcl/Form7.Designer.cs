@@ -56,9 +56,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(383, 317);
+            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(372, 317);
             button1.Name = "button1";
-            button1.Size = new Size(85, 49);
+            button1.Size = new Size(106, 49);
             button1.TabIndex = 7;
             button1.Text = "Login funcionário";
             button1.UseVisualStyleBackColor = true;
@@ -90,7 +91,6 @@
             txtsenhaadm.Name = "txtsenhaadm";
             txtsenhaadm.Size = new Size(295, 23);
             txtsenhaadm.TabIndex = 4;
-            txtsenhaadm.Text = "adm123";
             // 
             // txtnomeadm
             // 
@@ -98,15 +98,15 @@
             txtnomeadm.Name = "txtnomeadm";
             txtnomeadm.Size = new Size(295, 23);
             txtnomeadm.TabIndex = 3;
-            txtnomeadm.Text = "adm";
             // 
             // btnadmentrar
             // 
-            btnadmentrar.Location = new Point(383, 276);
+            btnadmentrar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnadmentrar.Location = new Point(372, 262);
             btnadmentrar.Name = "btnadmentrar";
-            btnadmentrar.Size = new Size(75, 23);
+            btnadmentrar.Size = new Size(106, 49);
             btnadmentrar.TabIndex = 2;
-            btnadmentrar.Text = "Entrar";
+            btnadmentrar.Text = "Login ADM";
             btnadmentrar.UseVisualStyleBackColor = true;
             btnadmentrar.Click += btnadmentrar_Click;
             // 

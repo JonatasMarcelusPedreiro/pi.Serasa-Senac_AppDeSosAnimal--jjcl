@@ -19,7 +19,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            
+
             string nome = TXTnome.Texts;
             string senha = TXTsenha.Texts;
 
@@ -35,6 +35,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 MessageBox.Show("Login incorreto");
                 return;
             }
+            this.Close();
             Form4 tela = new Form4();
             tela.Show();
         }

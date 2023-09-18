@@ -40,13 +40,14 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
             }
         }
 
+        int Ximagem = 100;
+        int Yimagem = 0;
+        int Xnome = 100;
+        int Ynome = 200;
         int Xsitu = 100;
-        int Ysitu = 300;
-        int Ximagem = 20;
-        int Yimagem = 300;
-
-        int Xanimal = 0;
-        int Yanimal = 0;
+        int Ysitu = 240;
+        int Xsexo = 100;
+        int Ysexo = 290;
 
         int quebraLinha;
 
@@ -56,15 +57,10 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
             try
             {
-                // Converte a string base64 de volta para um array de bytes
                 byte[] imageBytes = Convert.FromBase64String(animal.imagem);
-
-                // Cria um objeto de imagem a partir dos bytes
                 using (var ms = new System.IO.MemoryStream(imageBytes))
                 {
                     Image imagem = Image.FromStream(ms);
-
-                    // Define a imagem no PictureBox
                     pic.Image = imagem;
                 }
             }
@@ -73,46 +69,96 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 MessageBox.Show("Erro ao carregar a imagem: " + ex.Message);
             }
 
-            pic.Size = new Size(200, 200);
-            
+            pic.Size = new Size(300, 200);
+
+
+            Label label = new Label();
+            label.Text = animal.animal;
+            label.ForeColor = Color.White;
+            label.Location = new Point(Xnome, Ynome);
+            label.Font = new Font("Microsoft Sans Serif", 20, FontStyle.Bold);
+            label.Size = new Size(200, 40);
+
+            Label label2 = new Label();
+            label2.Text = animal.situacao;
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(Xsitu, Ysitu);
+            label2.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
+            label2.Size = new Size(200, 50);
+
+            Label label3 = new Label();
+            label3.Text = $"Gênero:{animal.sexo}";
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(Xsexo, Ysexo);
+            label2.Font = new Font("Microsoft Sans Serif", 10, FontStyle.Bold);
+            label2.Size = new Size(100, 50);
+
+
+
+
 
             painelANIMAL.Controls.Add(pic);
-
-            //Label label = new Label();
-            //label.Text = animal.situacao;
-            //label.ForeColor = Color.White;
-            //label.Location = new Point(Xsitu,Ysitu);
-
-            //Label label2 = new Label();
-            //label2.Text = animal.animal;
-            //label2.ForeColor = Color.White;
-            //label2.Location = new Point(Xanimal, Yanimal);
-
-
-            //painelANIMAL.Controls.Add(label);
-            //painelANIMAL.Controls.Add(label2);
-
-            Xanimal = Xanimal + 100;
-            Xsitu = Xsitu + 100;
-
+            painelANIMAL.Controls.Add(label);
+            painelANIMAL.Controls.Add(label2);
+            painelANIMAL.Controls.Add(label3);
+            pic.Location = new Point(Ximagem, Yimagem);
+            Xsitu = Xsitu + 300;
+            Ximagem = Ximagem + 300;
+            Xnome = Xnome + 300;
+            Xsexo = Xsexo + 300;
             quebraLinha++;
 
-            if (quebraLinha == 5)
+            if (quebraLinha == 4)
             {
-                Xsitu = 200;
-                Ysitu = Ysitu + 300;
+                Ximagem = 100;
+                Yimagem = Yimagem + 350;
+                Xnome = 100;
+                Ynome = Ynome + 350;
+                Xsitu = 100;
+                Ysitu = Ysitu + 350;
+                Xsexo = 100;
+                Ysexo = Ysexo + 350;
             }
-
-            Xanimal = Xanimal + 100;
-
-            quebraLinha++;
-
-            if (quebraLinha == 5)
+            if (quebraLinha == 8)
             {
-                Xanimal = 200;
-                Yanimal = Yanimal + 300;
+                Ximagem = 100;
+                Yimagem = Yimagem + 350;
+                Xnome = 100;
+                Ynome = Ynome + 350;
+                Xsitu = 100;
+                Ysitu = Ysitu + 350;
+                Xsexo = 100;
+                Ysexo = Ysexo + 350;
             }
+            if (quebraLinha == 12)
+            {
+                Ximagem = 100;
+                Yimagem = Yimagem + 350;
+                Xnome = 100;
+                Ynome = Ynome + 350;
+                Xsitu = 100;
+                Ysitu = Ysitu + 350;
+                Xsexo = 100;
+                Ysexo = Ysexo + 350;
+            }
+            if (quebraLinha == 14)
+            {
+                Ximagem = 100;
+                Yimagem = Yimagem + 350;
+                Xnome = 100;
+                Ynome = Ynome + 350;
+                Xsitu = 100;
+                Ysitu = Ysitu + 350;
+                Xsexo = 100;
+                Ysexo = Ysexo + 350;
+            }
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+            this.Close();
         }
     }
 }

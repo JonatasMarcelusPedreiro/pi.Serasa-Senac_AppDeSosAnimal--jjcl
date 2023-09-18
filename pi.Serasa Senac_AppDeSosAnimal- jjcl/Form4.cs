@@ -65,7 +65,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
         {
             Form8 tela = new Form8();
             tela.Show();
-
+            this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

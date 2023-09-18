@@ -137,7 +137,7 @@
             TXTnome.PlaceholderText = "";
             TXTnome.Size = new Size(567, 29);
             TXTnome.TabIndex = 2;
-            TXTnome.Texts = "";
+            TXTnome.Texts = "leo";
             TXTnome.UnderlinedStyle = false;
             // 
             // pictureBox1
@@ -172,7 +172,7 @@
             TXTsenha.PlaceholderText = "";
             TXTsenha.Size = new Size(563, 29);
             TXTsenha.TabIndex = 0;
-            TXTsenha.Texts = "";
+            TXTsenha.Texts = "leo";
             TXTsenha.UnderlinedStyle = false;
             // 
             // Form3

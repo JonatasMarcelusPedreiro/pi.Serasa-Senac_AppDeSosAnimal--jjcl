@@ -44,32 +44,38 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 MessageBox.Show("Preencha todos os campos acima.");
                 return;
             }
+            // Verifica se o nome já está em uso
             Usuarios u = new Usuarios();
-            u = u.verifica_cpf(cpf);
-            if (u == null)
+            u = u.verifica_nome(nome);
+            if (u != null)
             {
-                if (cpf.Length != 11)
-                {
-                    MessageBox.Show("CPF invalido");
-                    return;
-                }
-                Usuarios usuarios = new Usuarios(nome, email, senha, cpf, telefone);
-
-
-                usuarios.Insere_completo(usuarios);
-                // Todos os campos estão preenchidos, então abra a Form4
-                Form3 tela = new Form3();
-                tela.Show();
-
-
-            }
-            else
-            {
-                MessageBox.Show("CPF já está em uso");
+                MessageBox.Show("Nome já está em uso.");
                 return;
             }
 
+            // Verifica se o CPF tem 11 dígitos
+            if (cpf.Length != 11)
+            {
+                MessageBox.Show("CPF inválido.");
+                return;
+            }
 
+            // Verifica se o CPF já está em uso
+            Usuarios o = new Usuarios();
+            o = o.verifica_cpf(cpf);
+            if (o != null)
+            {
+                MessageBox.Show("CPF já está em uso.");
+                return;
+            }
+
+            // Se nenhum dos casos acima for verdadeiro, você pode inserir o novo registro
+            
+            Usuarios usuarios = new Usuarios(nome, email, senha, cpf, telefone);
+            usuarios.Insere_completo(usuarios);
+            Form3 tela = new Form3();
+            tela.Show();
+            this.Close();
         }
 
         private void Painel_Paint_1(object sender, PaintEventArgs e)

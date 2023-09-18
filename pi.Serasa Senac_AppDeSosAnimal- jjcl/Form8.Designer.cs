@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
             panel1 = new Panel();
+            painelANIMAL = new Panel();
             wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
             label3 = new Label();
             pictureBox1 = new PictureBox();
-            painelANIMAL = new Panel();
             panel1.SuspendLayout();
             wilBitGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -48,6 +48,14 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1912, 1050);
             panel1.TabIndex = 0;
+            // 
+            // painelANIMAL
+            // 
+            painelANIMAL.AutoScroll = true;
+            painelANIMAL.Location = new Point(3, 162);
+            painelANIMAL.Name = "painelANIMAL";
+            painelANIMAL.Size = new Size(1373, 594);
+            painelANIMAL.TabIndex = 8;
             // 
             // wilBitGradientPanel1
             // 
@@ -88,13 +96,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
-            // 
-            // painelANIMAL
-            // 
-            painelANIMAL.Location = new Point(3, 166);
-            painelANIMAL.Name = "painelANIMAL";
-            painelANIMAL.Size = new Size(1373, 594);
-            painelANIMAL.TabIndex = 8;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Form8
             // 

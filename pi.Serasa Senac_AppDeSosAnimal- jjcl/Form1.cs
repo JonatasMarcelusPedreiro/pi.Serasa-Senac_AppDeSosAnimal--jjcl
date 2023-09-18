@@ -112,7 +112,7 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
 
         private void cadastrorapido_Click(object sender, EventArgs e)
         {
-
+                
             string nome = txtnome.Texts;
             string cpf = txtcpf.Texts;
             string senha = txttelefone.Texts;
@@ -124,26 +124,44 @@ namespace pi.Serasa_Senac_AppDeSosAnimal__jjcl
                 MessageBox.Show("Preencha todos os campos acima.");
                 return;
             }
+            // Verifica se o nome já está em uso
             Usuarios u = new Usuarios();
             u = u.verifica_nome(nome);
-            if (u == null)
+            if (u != null)
             {
-                Usuarios usuarios = new Usuarios(nome, cpf, senha);
-                usuarios.Insere_rapido(usuarios);
-                Form3 tela = new Form3();
-                tela.Show();
-            }
-            else
-            {
-                MessageBox.Show("Nome ja esta em uso");
+                MessageBox.Show("Nome já está em uso.");
                 return;
             }
+
+            // Verifica se o CPF tem 11 dígitos
+            if (cpf.Length != 11)
+            {
+                MessageBox.Show("CPF inválido.");
+                return;
+            }
+
+            // Verifica se o CPF já está em uso
+            Usuarios o = new Usuarios();
+            o = o.verifica_cpf(cpf);
+            if (o != null)
+            {
+                MessageBox.Show("CPF já está em uso.");
+                return;
+            }
+
+            // Se nenhum dos casos acima for verdadeiro, você pode inserir o novo registro
+            Usuarios usuarios = new Usuarios(nome, cpf, senha);
+            usuarios.Insere_rapido(usuarios);
+            Form3 tela = new Form3();
+            tela.Show();
+
         }
 
         private void btnlogin_Click_1(object sender, EventArgs e)
         {
             Form3 tela = new Form3();
             tela.Show();
+
         }
     }
 
